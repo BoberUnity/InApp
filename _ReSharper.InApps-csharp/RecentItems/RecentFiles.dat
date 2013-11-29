@@ -1,12 +1,12 @@
 ﻿<RecentFiles>
   <RecentFiles>
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitProduct.cs" caret="2014" fromTop="66" />
-    <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitTransaction.cs" caret="1889" fromTop="68" />
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitDownload.cs" caret="2571" fromTop="88" />
-    <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitBinding.cs" caret="4825" fromTop="33" />
-    <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/d:demo/f:StoreKitEventListener.cs" caret="3042" fromTop="7" />
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitManager.cs" caret="3721" fromTop="116" />
-    <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/d:demo/f:StoreKitGUIManager.cs" caret="220" fromTop="0" />
+    <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitTransaction.cs" caret="0" fromTop="0" />
+    <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitBinding.cs" caret="0" fromTop="0" />
+    <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/d:demo/f:StoreKitGUIManager.cs" caret="437" fromTop="11" />
+    <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/d:demo/f:StoreKitEventListener.cs" caret="3965" fromTop="24" />
   </RecentFiles>
   <RecentEdits>
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitProduct.cs" caret="2014" fromTop="15" />
@@ -14,7 +14,7 @@
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitManager.cs" caret="3721" fromTop="8" />
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitDownload.cs" caret="2571" fromTop="9" />
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitBinding.cs" caret="4825" fromTop="33" />
-    <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/d:demo/f:StoreKitEventListener.cs" caret="3042" fromTop="7" />
-    <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/d:demo/f:StoreKitGUIManager.cs" caret="220" fromTop="9" />
+    <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/d:demo/f:StoreKitGUIManager.cs" caret="437" fromTop="11" />
+    <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/d:demo/f:StoreKitEventListener.cs" caret="3872" fromTop="20" />
   </RecentEdits>
 </RecentFiles>

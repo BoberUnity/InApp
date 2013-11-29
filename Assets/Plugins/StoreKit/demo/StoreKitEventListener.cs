@@ -6,6 +6,12 @@ using System.Collections.Generic;
 public class StoreKitEventListener : MonoBehaviour
 {
 //#if UNITY_IPHONE
+    private int Vopr = 0;
+    private int Gold = 0;
+
+    private string VoprStr = "";
+    private string GoldStr = "";
+
 	void OnEnable()
 	{
 		// Listens to all the StoreKit events.  All event listeners MUST be removed before this object is disposed!
@@ -73,6 +79,17 @@ public class StoreKitEventListener : MonoBehaviour
 	void purchaseSuccessful( StoreKitTransaction transaction )
 	{
 		Debug.Log( "purchased product: " + transaction );
+        if (GetComponent<StoreKitGUIManager>().ActivePurchase == 1)
+        {
+            Vopr += 1;
+            VoprStr = transaction.ToString();
+        }
+
+        if (GetComponent<StoreKitGUIManager>().ActivePurchase == 2)
+        {
+            Gold += 1;
+            GoldStr = transaction.ToString();
+        }
 	}
 	
 	
@@ -94,6 +111,17 @@ public class StoreKitEventListener : MonoBehaviour
 		foreach( var dl in downloads )
 			Debug.Log( dl );
 	}
+
+    private void OnGUI()
+    {
+        GUI.Label(new Rect(20, Screen.height - 80,300,30), "50 questions: " + Vopr.ToString());
+        GUI.Label(new Rect(20, Screen.height - 60, 300, 30), "Gold: " + Gold.ToString());
+
+        if (Vopr > 0) 
+            GUI.Label(new Rect(20, Screen.height - 40, 300, 30), "purchased product: " + VoprStr);
+        if (Gold > 0) 
+            GUI.Label(new Rect(20, Screen.height - 20, 300, 30), "purchased product: " + GoldStr);
+    }
 	
 //#endif
 }
