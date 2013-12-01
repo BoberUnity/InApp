@@ -3,14 +3,14 @@
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitProduct.cs" caret="2014" fromTop="66" />
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitDownload.cs" caret="2571" fromTop="88" />
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitManager.cs" caret="3721" fromTop="116" />
+    <File id="3FDE732C-0A93-EFA7-BFE1-605A9BDCC863/d:Assets/d:NGUI/d:Scripts/d:Editor/f:UIFontMaker.cs" caret="1744" fromTop="90" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:NGUI/d:Scripts/d:UI/f:UIRoot.cs" caret="3609" fromTop="99" />
+    <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitTransaction.cs" caret="295" fromTop="12" />
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitBinding.cs" caret="3867" fromTop="14" />
-    <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitTransaction.cs" caret="295" fromTop="0" />
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/d:demo/f:StoreKitEventListener.cs" caret="3100" fromTop="22" />
-    <File id="3FDE732C-0A93-EFA7-BFE1-605A9BDCC863/d:Assets/d:NGUI/d:Scripts/d:Editor/f:UIFontMaker.cs" caret="2141" fromTop="90" />
-    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:NGUI/d:Scripts/d:UI/f:UIRoot.cs" caret="3278" fromTop="19" />
-    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonBuy.cs" caret="289" fromTop="11" />
-    <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/d:demo/f:StoreKitGUIManager.cs" caret="5310" fromTop="26" />
-    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:MessageWindow.cs" caret="5129" fromTop="19" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonBuy.cs" caret="255" fromTop="10" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:MessageWindow.cs" caret="6120" fromTop="9" />
+    <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/d:demo/f:StoreKitGUIManager.cs" caret="5781" fromTop="20" />
   </RecentFiles>
   <RecentEdits>
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitProduct.cs" caret="2014" fromTop="15" />
@@ -19,9 +19,9 @@
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitDownload.cs" caret="2571" fromTop="9" />
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitBinding.cs" caret="4825" fromTop="33" />
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/d:demo/f:StoreKitEventListener.cs" caret="3100" fromTop="22" />
-    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonBuy.cs" caret="0" fromTop="0" />
-    <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/d:demo/f:StoreKitGUIManager.cs" caret="5311" fromTop="11" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:NGUI/d:Scripts/d:UI/f:UIRoot.cs" caret="3278" fromTop="19" />
-    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:MessageWindow.cs" caret="5034" fromTop="15" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonBuy.cs" caret="308" fromTop="12" />
+    <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/d:demo/f:StoreKitGUIManager.cs" caret="5753" fromTop="20" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:MessageWindow.cs" caret="6120" fromTop="9" />
   </RecentEdits>
 </RecentFiles>

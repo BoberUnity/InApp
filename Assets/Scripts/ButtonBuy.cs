@@ -1,1 +1,2 @@
-using UnityEngine;public class ButtonBuy : MonoBehaviour{    [SerializeField] private StoreKitGUIManager storeKitGUIManager = null;    [SerializeField] private int id = 0;  protected virtual void OnPress(bool isPressed)  {    if (isPressed)    {      storeKitGUIManager.Buy(id);    }  }}
+using UnityEngine;public class ButtonBuy : MonoBehaviour{    [SerializeField] private StoreKitGUIManager storeKitGUIManager = null;    [SerializeField] private int id = 0;  protected virtual void OnPress(bool isPressed)  {    if (isPressed)    {      if (id == 2)
+        storeKitGUIManager.Restore();      else        storeKitGUIManager.Buy(id);    }  }}
