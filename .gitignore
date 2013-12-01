@@ -1,0 +1,9 @@
+syntax: glob
+Library
+_ReSharper.InApps-csharp
+Temp
+*.pidb
+*.sln
+*.userprefs
+*.csprog
+*.orig
