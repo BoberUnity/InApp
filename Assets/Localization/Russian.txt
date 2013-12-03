@@ -1,0 +1,13 @@
+﻿Flag = Flag-US
+Language = English
+English = English
+Russian = Russian
+UPGRADE = ПОКУПКИ
+DRIVING TEST = ТЕСТ [ffff00]ВОЖДЕНИЯ[-]
+100 more questions = 100 новых вопросов
+Unlimited acces for 1 year = Золотой статус
+Restore purchace = Восстановление покупок
+Home = Домой
+Mission = Миссии
+Targets = Цели
+Shop = Магазин

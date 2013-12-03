@@ -1,0 +1,13 @@
+﻿Flag = Flag-US
+Language = English
+English = English
+Russian = Russian
+UPGRADE = UPGRADE
+DRIVING TEST = DRIVING [ffff00]TEST[-]
+100 more questions = 100 more questions
+Unlimited acces for 1 year = Unlimited acces for 1 year
+Restore purchace = Restore purchace
+Home = Home
+Mission = Mission
+Targets = Targets
+Shop = Shop

@@ -40,19 +40,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 311a4178c4b829443b79d3ffeb2002de, type: 2}
   mSprites:
-  - name: 03 Purchase_bigBack
-    x: 0
-    y: 912
-    width: 640
-    height: 1136
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
   - name: 03 Purchase_Back
     x: 0
     y: 11
@@ -66,8 +53,21 @@ MonoBehaviour:
     paddingRight: 1
     paddingTop: 0
     paddingBottom: 3
+  - name: 03 Purchase_bigBack
+    x: 0
+    y: 912
+    width: 640
+    height: 1136
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: 03 Purchase_button
-    x: 1282
+    x: 1843
     y: 1985
     width: 131
     height: 63
@@ -79,22 +79,35 @@ MonoBehaviour:
     paddingRight: 1
     paddingTop: 2
     paddingBottom: 0
-  - name: ButtonTargets
-    x: 553
-    y: 878
-    width: 47
-    height: 33
+  - name: ButtonAnswer
+    x: 1282
+    y: 1976
+    width: 560
+    height: 72
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 2
+    paddingLeft: 5
+    paddingRight: 5
+    paddingTop: 0
+    paddingBottom: 0
+  - name: ButtonBack
+    x: 601
+    y: 811
+    width: 39
+    height: 38
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
     paddingRight: 1
-    paddingTop: 2
+    paddingTop: 1
     paddingBottom: 1
   - name: ButtonHouse
     x: 551
-    y: 838
+    y: 776
     width: 35
     height: 33
     borderLeft: 0
@@ -105,22 +118,22 @@ MonoBehaviour:
     paddingRight: 5
     paddingTop: 4
     paddingBottom: 0
-  - name: ButtonShop
+  - name: ButtonList
     x: 512
-    y: 803
-    width: 35
-    height: 34
+    y: 810
+    width: 40
+    height: 39
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 3
-    paddingRight: 3
-    paddingTop: 3
-    paddingBottom: 0
+    paddingLeft: 1
+    paddingRight: 1
+    paddingTop: 1
+    paddingBottom: 2
   - name: ButtonMission
     x: 512
-    y: 838
+    y: 776
     width: 38
     height: 33
     borderLeft: 0
@@ -131,6 +144,58 @@ MonoBehaviour:
     paddingRight: 3
     paddingTop: 7
     paddingBottom: 4
+  - name: ButtonShop
+    x: 512
+    y: 741
+    width: 35
+    height: 34
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 3
+    paddingRight: 3
+    paddingTop: 3
+    paddingBottom: 0
+  - name: ButtonTargets
+    x: 553
+    y: 816
+    width: 47
+    height: 33
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 2
+    paddingRight: 1
+    paddingTop: 2
+    paddingBottom: 1
+  - name: Counter
+    x: 1282
+    y: 1951
+    width: 204
+    height: 24
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: Gold
+    x: 512
+    y: 850
+    width: 61
+    height: 61
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: Podval
     x: 641
     y: 1940
@@ -144,32 +209,6 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 6
     paddingBottom: 0
-  - name: ButtonBack
-    x: 601
-    y: 873
-    width: 39
-    height: 38
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 1
-    paddingRight: 1
-    paddingTop: 1
-    paddingBottom: 1
-  - name: ButtonList
-    x: 512
-    y: 872
-    width: 40
-    height: 39
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 1
-    paddingRight: 1
-    paddingTop: 1
-    paddingBottom: 2
   - name: RusFont
     x: 0
     y: 409
@@ -183,6 +222,19 @@ MonoBehaviour:
     paddingRight: 1
     paddingTop: 0
     paddingBottom: 10
+  - name: Star
+    x: 574
+    y: 864
+    width: 48
+    height: 47
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   mPixelSize: 1
   mReplacement: {fileID: 0}
   mCoordinates: 0

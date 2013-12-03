@@ -1,9 +1,19 @@
 syntax: glob
 Library
+/Temp/*
+/Library/*
 _ReSharper.InApps-csharp
 Temp
 *.pidb
 *.sln
+
+# Monodevelop
+/Assembly-CSharp.pidb
 *.userprefs
+
 *.csprog
 *.orig
+# Visual Studio
+*.suo
+*.user
+obj/
