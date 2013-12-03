@@ -8,13 +8,14 @@
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitTransaction.cs" caret="295" fromTop="12" />
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitBinding.cs" caret="3867" fromTop="14" />
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/d:demo/f:StoreKitEventListener.cs" caret="3100" fromTop="22" />
-    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonBuy.cs" caret="255" fromTop="10" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:MessageWindow.cs" caret="6120" fromTop="9" />
-    <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/d:demo/f:StoreKitGUIManager.cs" caret="5774" fromTop="23" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:NGUI/d:Scripts/d:Internal/f:Localization.cs" caret="4399" fromTop="0" />
-    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:Text.cs" caret="2133" fromTop="15" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:NGUI/d:Examples/d:Other/f:English.txt" caret="95" fromTop="5" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:NGUI/d:Scripts/d:UI/f:UILocalize.cs" caret="0" fromTop="0" />
-    <File id="F300DC1B-E643-4CCB-80EE-A7F840B07500/f:English.txt" caret="95" fromTop="5" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:Text.cs" caret="2133" fromTop="15" />
+    <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/d:demo/f:StoreKitGUIManager.cs" caret="5774" fromTop="23" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonBuy.cs" caret="164" fromTop="5" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:InterfaceScale.cs" caret="166" fromTop="6" />
   </RecentFiles>
   <RecentEdits>
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitProduct.cs" caret="2014" fromTop="15" />
@@ -28,5 +29,6 @@
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/d:demo/f:StoreKitGUIManager.cs" caret="6133" fromTop="20" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:MessageWindow.cs" caret="6120" fromTop="9" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:Text.cs" caret="2133" fromTop="15" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:InterfaceScale.cs" caret="166" fromTop="6" />
   </RecentEdits>
 </RecentFiles>

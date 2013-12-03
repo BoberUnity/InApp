@@ -171,6 +171,7 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
      <Compile Include="Assets\Scripts\ButtonBuy.cs" />
+     <Compile Include="Assets\Scripts\InterfaceScale.cs" />
      <Compile Include="Assets\Scripts\MessageWindow.cs" />
      <Compile Include="Assets\Scripts\Text.cs" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Depth Cutout.shader" />
