@@ -119,7 +119,7 @@ public class UIRoot : MonoBehaviour
 
 	protected virtual void Start ()
 	{
-	    manualHeight = 639*Screen.height/Screen.width;//Bober
+        manualHeight = 639 * Screen.height / Screen.width;//Bober
         UIOrthoCamera oc = GetComponentInChildren<UIOrthoCamera>();
 
 		if (oc != null)

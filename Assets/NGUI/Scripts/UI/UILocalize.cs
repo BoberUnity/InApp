@@ -32,7 +32,7 @@ public class UILocalize : MonoBehaviour
 	/// Localize the widget on enable, but only if it has been started already.
 	/// </summary>
 
-	void OnEnable () { if (mStarted && Localization.instance != null) Localize(); }
+	void OnEnable () { if (mStarted && Localization.instance != null) Localize(); Debug.Log("Local");}
 
 	/// <summary>
 	/// Localize the widget on start.

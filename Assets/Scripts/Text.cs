@@ -5,10 +5,44 @@ public class Text : MonoBehaviour
 {
     [SerializeField] private TextAsset textAsset = null;
     [SerializeField] private int numStr = 0;//vo vsem doke
+    [SerializeField] private UILabel labelQuetion = null;
+    [SerializeField] private UILabel labelA = null;
+    [SerializeField] private UILabel labelB = null;
+    [SerializeField] private UILabel labelC = null;
+    [SerializeField] private UILabel labelD = null;
     [SerializeField] private string[] allBox0;
     [SerializeField] private string[] allBox1;
     [SerializeField] private string[] linesTemp;
     [SerializeField] private string[][] allBox;
+    private int numQuestion = 1;
+
+    public int NumQuestion
+    {
+        get { return numQuestion;}
+        set { 
+                numQuestion = value;
+                labelQuetion.text = allBox[numQuestion][1];
+                labelA.text = allBox[numQuestion][4];
+                labelB.text = allBox[numQuestion][5];
+
+                if (allBox[numQuestion][6].Length == 1)
+                    labelC.transform.parent.gameObject.SetActive(false);
+                else
+                {
+                    labelC.transform.parent.gameObject.SetActive(true);
+                    labelC.text = allBox[numQuestion][6];
+                }
+
+                if (allBox[numQuestion][7].Length == 1)
+                    labelD.transform.parent.gameObject.SetActive(false);
+                else
+                {
+                    labelD.transform.parent.gameObject.SetActive(true);
+                    labelD.text = allBox[numQuestion][7];
+                }
+
+            }
+    }
 
     private bool first = true;
     private int stlb = 0;
@@ -63,6 +97,9 @@ public class Text : MonoBehaviour
       }
 
       allBox0 = allBox[0];
-      allBox1 = allBox[421];
+      allBox1 = allBox[1];
+      
+
+      
   }
 }
