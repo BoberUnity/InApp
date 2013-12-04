@@ -94,7 +94,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: ButtonBack
     x: 601
-    y: 811
+    y: 803
     width: 39
     height: 38
     borderLeft: 0
@@ -107,7 +107,7 @@ MonoBehaviour:
     paddingBottom: 1
   - name: ButtonHouse
     x: 551
-    y: 776
+    y: 768
     width: 35
     height: 33
     borderLeft: 0
@@ -120,7 +120,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: ButtonList
     x: 512
-    y: 810
+    y: 802
     width: 40
     height: 39
     borderLeft: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
     paddingBottom: 2
   - name: ButtonMission
     x: 512
-    y: 776
+    y: 768
     width: 38
     height: 33
     borderLeft: 0
@@ -146,7 +146,7 @@ MonoBehaviour:
     paddingBottom: 4
   - name: ButtonShop
     x: 512
-    y: 741
+    y: 733
     width: 35
     height: 34
     borderLeft: 0
@@ -159,7 +159,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: ButtonTargets
     x: 553
-    y: 816
+    y: 808
     width: 47
     height: 33
     borderLeft: 0
@@ -185,9 +185,9 @@ MonoBehaviour:
     paddingBottom: 0
   - name: Gold
     x: 512
-    y: 850
-    width: 61
-    height: 61
+    y: 842
+    width: 70
+    height: 69
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -223,7 +223,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 10
   - name: Star
-    x: 574
+    x: 583
     y: 864
     width: 48
     height: 47
