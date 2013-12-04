@@ -12,10 +12,15 @@
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:NGUI/d:Scripts/d:Internal/f:Localization.cs" caret="4399" fromTop="0" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:NGUI/d:Examples/d:Other/f:English.txt" caret="95" fromTop="5" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:NGUI/d:Scripts/d:UI/f:UILocalize.cs" caret="0" fromTop="0" />
-    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:Text.cs" caret="2133" fromTop="15" />
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/d:demo/f:StoreKitGUIManager.cs" caret="5774" fromTop="23" />
-    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonBuy.cs" caret="164" fromTop="5" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:InterfaceScale.cs" caret="166" fromTop="6" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:Text.cs" caret="287" fromTop="0" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonBuy.cs" caret="372" fromTop="18" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:NGUI/d:Scripts/d:Interaction/f:LanguageSelection.cs" caret="1169" fromTop="23" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonLoadScene.cs" caret="71" fromTop="4" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:NGUI/d:Scripts/d:Interaction/f:UIPopupList.cs" caret="3319" fromTop="17" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:DontDestroy.cs" caret="93" fromTop="6" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:CameraController.cs" caret="582" fromTop="22" />
   </RecentFiles>
   <RecentEdits>
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitProduct.cs" caret="2014" fromTop="15" />
@@ -25,10 +30,13 @@
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitBinding.cs" caret="4825" fromTop="33" />
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/d:demo/f:StoreKitEventListener.cs" caret="3100" fromTop="22" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:NGUI/d:Scripts/d:UI/f:UIRoot.cs" caret="3278" fromTop="19" />
-    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonBuy.cs" caret="308" fromTop="12" />
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/d:demo/f:StoreKitGUIManager.cs" caret="6133" fromTop="20" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:MessageWindow.cs" caret="6120" fromTop="9" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:Text.cs" caret="2133" fromTop="15" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:InterfaceScale.cs" caret="166" fromTop="6" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonBuy.cs" caret="164" fromTop="5" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonLoadScene.cs" caret="71" fromTop="4" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:DontDestroy.cs" caret="92" fromTop="6" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:CameraController.cs" caret="582" fromTop="22" />
   </RecentEdits>
 </RecentFiles>

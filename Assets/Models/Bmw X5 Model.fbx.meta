@@ -1,0 +1,126 @@
+fileFormatVersion: 2
+guid: 4c46eba51975b8d4ebf0253e271aaf87
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Bmw X5
+    100002: //RootNode
+    100004: body
+    100006: driver
+    100008: lighthead_01
+    100010: lighthead_02
+    100012: lightstop_01
+    100014: lightstop_02
+    100016: lightturnl_01
+    100018: lightturnl_02
+    100020: lightturnr_01
+    100022: lightturnr_02
+    100024: rotator_01
+    100026: rotator_02
+    100028: shadow_00
+    100030: wheel_001
+    100032: wheel_002
+    100034: wheel_003
+    100036: wheel_004
+    100038: whhel_002
+    100040: whhel_003
+    400000: Bmw X5
+    400002: //RootNode
+    400004: body
+    400006: driver
+    400008: lighthead_01
+    400010: lighthead_02
+    400012: lightstop_01
+    400014: lightstop_02
+    400016: lightturnl_01
+    400018: lightturnl_02
+    400020: lightturnr_01
+    400022: lightturnr_02
+    400024: rotator_01
+    400026: rotator_02
+    400028: shadow_00
+    400030: wheel_001
+    400032: wheel_002
+    400034: wheel_003
+    400036: wheel_004
+    400038: whhel_002
+    400040: whhel_003
+    2300000: body
+    2300002: driver
+    2300004: shadow_00
+    2300006: wheel_001
+    2300008: wheel_002
+    2300010: wheel_003
+    2300012: wheel_004
+    2300014: whhel_002
+    2300016: whhel_003
+    3300000: body
+    3300002: driver
+    3300004: shadow_00
+    3300006: wheel_001
+    3300008: wheel_002
+    3300010: wheel_003
+    3300012: wheel_004
+    3300014: whhel_002
+    3300016: whhel_003
+    4300000: wheel_004
+    4300002: wheel_001
+    4300004: shadow_00
+    4300006: wheel_003
+    4300008: wheel_002
+    4300010: body
+    4300012: driver
+    4300014: whhel_002
+    4300016: whhel_003
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 2
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  userData: 
