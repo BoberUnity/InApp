@@ -202,7 +202,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 42}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.60400999, y: .802675545, z: 0}
+  m_LocalPosition: {x: -.498958349, y: .498958349, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 81}
@@ -215,7 +215,7 @@ Transform:
   m_GameObject: {fileID: 44}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .00208333344, y: .00208333344, z: .00208333344}
+  m_LocalScale: {x: .00417536544, y: .00417536544, z: .00417536544}
   m_Children:
   - {fileID: 79}
   - {fileID: 1906829859}
@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scalingStyle: 1
-  manualHeight: 960
+  manualHeight: 479
   minimumHeight: 320
   maximumHeight: 2048
 --- !u!114 &119
@@ -367,17 +367,17 @@ MonoBehaviour:
   cullWhileDragging: 0
   alwaysOnScreen: 0
   worldToLocal:
-    e00: 479.999969
+    e00: 239.5
     e01: 0
     e02: 0
     e03: 0
     e10: 0
-    e11: 479.999969
+    e11: 239.5
     e12: 0
     e13: 0
     e20: 0
     e21: 0
-    e22: 479.999969
+    e22: 239.5
     e23: 0
     e30: 0
     e31: 0
@@ -1829,7 +1829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 51723849}
-  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
+  hover: {r: 1, g: 1, b: 1, a: 1}
   pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
   duration: .200000003
   disabledColor: {r: .5, g: .5, b: .5, a: 1}
@@ -1859,7 +1859,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 576, y: 106, z: 0}
+  m_Size: {x: 576, y: 100, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &51723854
 MonoBehaviour:
@@ -1876,7 +1876,7 @@ MonoBehaviour:
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 576
-  mHeight: 106
+  mHeight: 100
   mDepth: 0
   autoResizeBoxCollider: 1
   mAtlas: {fileID: 11400000, guid: be4ca8e34a822834f82adc9aa06fc76f, type: 2}
@@ -16061,17 +16061,17 @@ MonoBehaviour:
   cullWhileDragging: 0
   alwaysOnScreen: 0
   worldToLocal:
-    e00: 479.999969
+    e00: 239.5
     e01: 0
     e02: 0
-    e03: 1.60400999
+    e03: .498958349
     e10: 0
-    e11: 479.999969
+    e11: 239.5
     e12: 0
-    e13: -90.8026733
+    e13: -90.4989548
     e20: 0
     e21: 0
-    e22: 479.999969
+    e22: 239.5
     e23: 0
     e30: 0
     e31: 0
@@ -37364,7 +37364,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1352142159}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.60400999, y: 480.802643, z: 0}
+  m_LocalPosition: {x: -.498958349, y: 239.998947, z: 0}
   m_LocalScale: {x: 1, y: 1, z: .9999125}
   m_Children:
   - {fileID: 308703969}
@@ -44054,7 +44054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 1592425155}
-  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
+  hover: {r: 1, g: 1, b: 1, a: 1}
   pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
   duration: .200000003
   disabledColor: {r: .5, g: .5, b: .5, a: 1}
@@ -44084,7 +44084,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 576, y: 120, z: 0}
+  m_Size: {x: 576, y: 100, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1592425160
 MonoBehaviour:
@@ -44101,7 +44101,7 @@ MonoBehaviour:
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 576
-  mHeight: 120
+  mHeight: 100
   mDepth: 0
   autoResizeBoxCollider: 1
   mAtlas: {fileID: 11400000, guid: be4ca8e34a822834f82adc9aa06fc76f, type: 2}
@@ -44588,7 +44588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 1618759570}
-  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
+  hover: {r: 1, g: 1, b: 1, a: 1}
   pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
   duration: .200000003
   disabledColor: {r: .5, g: .5, b: .5, a: 1}
@@ -44607,7 +44607,7 @@ MonoBehaviour:
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 576
-  mHeight: 88
+  mHeight: 100
   mDepth: 0
   autoResizeBoxCollider: 0
   mAtlas: {fileID: 11400000, guid: be4ca8e34a822834f82adc9aa06fc76f, type: 2}
@@ -45819,7 +45819,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1679035672}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.60400999, y: .802675545, z: 0}
+  m_LocalPosition: {x: -.498958349, y: .498958349, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2118887519}
@@ -48736,7 +48736,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 1780218089}
-  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
+  hover: {r: 1, g: 1, b: 1, a: 1}
   pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
   duration: .200000003
   disabledColor: {r: .5, g: .5, b: .5, a: 1}
@@ -48765,7 +48765,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 576, y: 110, z: 0}
+  m_Size: {x: 576, y: 100, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1780218094
 MonoBehaviour:
@@ -48782,7 +48782,7 @@ MonoBehaviour:
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 576
-  mHeight: 110
+  mHeight: 100
   mDepth: 0
   autoResizeBoxCollider: 1
   mAtlas: {fileID: 11400000, guid: be4ca8e34a822834f82adc9aa06fc76f, type: 2}
@@ -49634,8 +49634,8 @@ MonoBehaviour:
   arrangement: 1
   maxPerLine: 0
   cellWidth: 100
-  cellHeight: 100
-  animateSmoothly: 1
+  cellHeight: 120
+  animateSmoothly: 0
   sorted: 1
   hideInactive: 1
 --- !u!1 &1805064219
@@ -53106,7 +53106,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1936414740}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.60400999, y: -479.197296, z: 0}
+  m_LocalPosition: {x: -.498958349, y: -239.001038, z: 0}
   m_LocalScale: {x: 1.00002503, y: 1.00002503, z: 1.00002503}
   m_Children:
   - {fileID: 1378574579}
@@ -54971,8 +54971,7 @@ MonoBehaviour:
   mText: "\u0412\u044B \u043D\u0435 \u0434\u043E\u043B\u0436\u043D\u044B \u0432\u043E\u0437\u043E\u0431\u043D\u043E\u0432\u043B\u044F\u0442\u044C
     \u0438\u043B\u0438 \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0430\u0442\u044C
     \u0434\u0432\u0438\u0436\u0435\u043D\u0438\u0435, \u043E\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043B\u044F\u0442\u044C
-    \u043A\u0430\u043A\u043E\u0439-\u043B\u0438\u0431\u043E \u043C\u0430\u043D\u0435\u0432\u0440,
-    \u0435\u0441\u043B\u0438 \u044D\u0442\u043E \u043C\u043E\u0436\u0435\u0442"
+    \u043A\u0430\u043A\u043E\u0439-\u043B\u0438\u0431\u043E \u043C\u0430\u043D\u0435\u0432\u0440."
   mFontSize: 52
   mFontStyle: 0
   mEncoding: 1
@@ -58070,7 +58069,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2122129590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -254, y: 0, z: 0}
+  m_LocalPosition: {x: -260, y: 0, z: 0}
   m_LocalScale: {x: .9999125, y: .9999125, z: .9999125}
   m_Children: []
   m_Father: {fileID: 51723850}
