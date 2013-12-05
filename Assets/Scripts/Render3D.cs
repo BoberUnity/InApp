@@ -9,6 +9,11 @@ public class Render3D : MonoBehaviour
     [SerializeField] private bool play = false;
     private float actualAspect = 0.75f;
 
+    public bool Play
+    {
+        set { play = value; }
+    }
+
     private void Start()
     {
         actualAspect = (float)Screen.height / (float)Screen.width;

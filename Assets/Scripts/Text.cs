@@ -4,7 +4,7 @@ using UnityEngine;
 public class Text : MonoBehaviour
 {
     [SerializeField] private TextAsset textAsset = null;
-    [SerializeField] private int numStr = 0;//vo vsem doke
+    [SerializeField] private Render3D render3D = null;
     [SerializeField] private UILabel labelQuetion = null;
     [SerializeField] private UILabel labelA = null;
     [SerializeField] private UILabel labelB = null;
@@ -14,7 +14,14 @@ public class Text : MonoBehaviour
     [SerializeField] private string[] allBox1;
     [SerializeField] private string[] linesTemp;
     [SerializeField] private string[][] allBox;
+    
     private int numQuestion = 1;
+    private int currQuestion = 0;//Ответ, который дал юзер
+
+    public int CurrQuestion
+    {
+        set { currQuestion = value; }
+    }
 
     public int NumQuestion
     {
@@ -41,7 +48,9 @@ public class Text : MonoBehaviour
                     labelD.text = allBox[numQuestion][7];
                 }
 
-            }
+            render3D.Play = true;
+
+        }
     }
 
     private bool first = true;
@@ -49,7 +58,7 @@ public class Text : MonoBehaviour
 
   private void Start()
   {
-      
+      int numStr = 0;//vo vsem doke
       var allText = textAsset.text;//File.ReadAllLines(textAsset);
       //len = allText.Length;
       //var lin = 0;

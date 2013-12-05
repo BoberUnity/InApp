@@ -1724,6 +1724,7 @@ GameObject:
   - 114: {fileID: 51723852}
   - 114: {fileID: 51723851}
   - 114: {fileID: 51723855}
+  - 114: {fileID: 51723856}
   m_Layer: 8
   m_Name: Button C
   m_TagString: Untagged
@@ -1829,6 +1830,19 @@ MonoBehaviour:
   hover: {x: 1, y: 1, z: 1}
   pressed: {x: .949999988, y: .949999988, z: 1}
   duration: .200000003
+--- !u!114 &51723856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 51723849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c67a97f7599d41b47a81134c4c436000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textController: {fileID: 1438869206}
+  id: 3
 --- !u!1 &52649659
 GameObject:
   m_ObjectHideFlags: 0
@@ -36659,7 +36673,6 @@ GameObject:
   - 114: {fileID: 1292626630}
   - 114: {fileID: 1292626629}
   - 114: {fileID: 1292626628}
-  - 114: {fileID: 1292626633}
   m_Layer: 8
   m_Name: ButtonNextQuestion
   m_TagString: Untagged
@@ -36752,18 +36765,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 40, y: 40, z: 0}
   m_Center: {x: 0, y: 0, z: -.25}
---- !u!114 &1292626633
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1292626626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c67a97f7599d41b47a81134c4c436000, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textController: {fileID: 1438869206}
 --- !u!1 &1294470125
 GameObject:
   m_ObjectHideFlags: 0
@@ -41086,7 +41087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textAsset: {fileID: 4900000, guid: fbacae7b413950f4090537b4b037f872, type: 3}
-  numStr: 0
+  render3D: {fileID: 1933910787}
   labelQuetion: {fileID: 630408531}
   labelA: {fileID: 292021600}
   labelB: {fileID: 1090986110}
@@ -44849,6 +44850,7 @@ GameObject:
   - 114: {fileID: 1592425158}
   - 114: {fileID: 1592425157}
   - 114: {fileID: 1592425161}
+  - 114: {fileID: 1592425162}
   m_Layer: 8
   m_Name: Button D
   m_TagString: Untagged
@@ -44954,6 +44956,19 @@ MonoBehaviour:
   hover: {x: 1, y: 1, z: 1}
   pressed: {x: .949999988, y: .949999988, z: .949999988}
   duration: .200000003
+--- !u!114 &1592425162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1592425155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c67a97f7599d41b47a81134c4c436000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textController: {fileID: 1438869206}
+  id: 4
 --- !u!1 &1602519662
 GameObject:
   m_ObjectHideFlags: 0
@@ -45332,6 +45347,7 @@ GameObject:
   - 114: {fileID: 1618759573}
   - 114: {fileID: 1618759575}
   - 114: {fileID: 1618759576}
+  - 114: {fileID: 1618759577}
   m_Layer: 8
   m_Name: Button A
   m_TagString: Untagged
@@ -45435,6 +45451,19 @@ MonoBehaviour:
   hover: {x: 1, y: 1, z: 1}
   pressed: {x: .949999988, y: .949999988, z: 1}
   duration: .200000003
+--- !u!114 &1618759577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1618759570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c67a97f7599d41b47a81134c4c436000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textController: {fileID: 1438869206}
+  id: 1
 --- !u!1 &1618856805
 GameObject:
   m_ObjectHideFlags: 0
@@ -49189,6 +49218,7 @@ GameObject:
   - 114: {fileID: 1780218091}
   - 114: {fileID: 1780218092}
   - 114: {fileID: 1780218095}
+  - 114: {fileID: 1780218096}
   m_Layer: 8
   m_Name: Button B
   m_TagString: Untagged
@@ -49293,6 +49323,19 @@ MonoBehaviour:
   hover: {x: 1, y: 1, z: 1}
   pressed: {x: .949999988, y: .949999988, z: 1}
   duration: .200000003
+--- !u!114 &1780218096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1780218089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c67a97f7599d41b47a81134c4c436000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textController: {fileID: 1438869206}
+  id: 2
 --- !u!1 &1780637884
 GameObject:
   m_ObjectHideFlags: 0
