@@ -178,7 +178,7 @@
      <Compile Include="Assets\Scripts\DontDestroy.cs" />
      <Compile Include="Assets\Scripts\InterfaceScale.cs" />
      <Compile Include="Assets\Scripts\MessageWindow.cs" />
-     <Compile Include="Assets\Scripts\RenderScale.cs" />
+     <Compile Include="Assets\Scripts\Render3D.cs" />
      <Compile Include="Assets\Scripts\Text.cs" />
      <Compile Include="Assets\Scripts\Utility\Blink.cs" />
      <Compile Include="Assets\Scripts\Utility\HUDFPS.cs" />
