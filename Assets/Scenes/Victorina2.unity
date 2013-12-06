@@ -4144,6 +4144,7 @@ MonoBehaviour:
   screen1: {fileID: 1589827767}
   screen2: {fileID: 1290351960}
   scroll: {fileID: 1196046849}
+  textController: {fileID: 1438869206}
   speed: 2
   play: 0
 --- !u!1 &2008431436

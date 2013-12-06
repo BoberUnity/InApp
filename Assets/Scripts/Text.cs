@@ -19,6 +19,9 @@ public class Text : MonoBehaviour
     private int numQuestion = 1;
     private int currQuestion = 0;//Ответ, который дал юзер
     private GameObject instance = null;
+    private GameObject instance2 = null;
+    
+    //private bool instance1Old = false;
 
     public int CurrQuestion
     {
@@ -139,17 +142,32 @@ public class Text : MonoBehaviour
       allBox1 = allBox[2];
 
       NumQuestion = 1;
-      instance = Instantiate(Resources.Load<GameObject>("Prefs/1.1.")) as GameObject;
+      Debug.LogWarning("Prefs/" + allBox[NumQuestion][0]);
+      Debug.LogWarning("L" + allBox[NumQuestion][0].Length);
+      instance = Instantiate(Resources.Load<GameObject>("Prefs/" + allBox[NumQuestion][0].Substring(0, allBox[NumQuestion][0].Length - 1))) as GameObject;
       
   }
 
     private IEnumerator LoadNextQuestion (float time)
     {
         yield return new WaitForSeconds(time);
+        Debug.LogWarning("LoadNextQuestion");
         render3D.Play = true;
         ButtonsActivate(true);
         NumQuestion++;
-        instance = Instantiate(Resources.Load<GameObject>("Prefs/1.2.")) as GameObject;
+
+        instance2 = instance;
+        if (Resources.Load<GameObject>("Prefs/" + allBox[NumQuestion][0].Substring(0, allBox[NumQuestion][0].Length - 1)) == null)
+        {
+             instance = Instantiate(Resources.Load<GameObject>("Prefs/1.1.")) as GameObject;
+             Debug.LogWarning("Resources = null in path Prefs/" + allBox[NumQuestion][0].Substring(0, allBox[NumQuestion][0].Length - 1));
+        }
+        else
+        {
+             instance = Instantiate(Resources.Load<GameObject>("Prefs/" + allBox[NumQuestion][0].Substring(0, allBox[NumQuestion][0].Length - 1))) as GameObject;
+             Debug.LogWarning("Resources in path Prefs/" + allBox[NumQuestion][0].Substring(0, allBox[NumQuestion][0].Length - 1)  + " load sucessfull");
+        }
+        
     }
 
     public void ButtonsActivate(bool value)
@@ -173,5 +191,11 @@ public class Text : MonoBehaviour
             labelD.transform.parent.GetComponent<UIButton>().hover = Color.white;
         }
         
+    }
+
+    public void UnloadPref()
+    {
+        Destroy(instance2);
+        Resources.UnloadUnusedAssets();
     }
 }

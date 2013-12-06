@@ -5,6 +5,7 @@ public class Render3D : MonoBehaviour
     [SerializeField] private Transform screen1 = null;
     [SerializeField] private Transform screen2 = null;
     [SerializeField] private Transform scroll = null;
+    [SerializeField] private Text textController = null;
     [SerializeField] private float speed = 1;
     [SerializeField] private bool play = false;
     private float actualAspect = 0.75f;
@@ -38,6 +39,7 @@ public class Render3D : MonoBehaviour
                 screen2.localPosition = new Vector3(0, screen1.localPosition.y,
                                                     screen1.localPosition.z);
                 play = false;
+                textController.UnloadPref();
             }
 
             if (screen2.localPosition.x < -1.5f)
@@ -47,6 +49,7 @@ public class Render3D : MonoBehaviour
                 screen1.localPosition = new Vector3(0, screen1.localPosition.y,
                                                     screen1.localPosition.z);
                 play = false;
+                textController.UnloadPref();
             }
         }   
     }
