@@ -600,9 +600,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textController: {fileID: 1438869206}
   id: 3
-  rightColor: {r: 0, g: 1, b: 0, a: 1}
-  errorColor: {r: 1, g: 0, b: 0, a: 1}
-  otherButtons: []
+  rightColor: {r: .501960814, g: 1, b: .501960814, a: 1}
+  errorColor: {r: 1, g: .501960814, b: .501960814, a: 1}
 --- !u!1 &137971141
 GameObject:
   m_ObjectHideFlags: 0
@@ -3612,7 +3611,7 @@ MonoBehaviour:
   tweenTarget: {fileID: 1592425155}
   hover: {r: 1, g: 1, b: 1, a: 1}
   pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
-  duration: .200000003
+  duration: .699999988
   disabledColor: {r: .5, g: .5, b: .5, a: 1}
   onClick: []
 --- !u!114 &1592425158
@@ -3695,9 +3694,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textController: {fileID: 1438869206}
   id: 4
-  rightColor: {r: 0, g: 1, b: 0, a: 1}
-  errorColor: {r: 1, g: 0, b: 0, a: 1}
-  otherButtons: []
+  rightColor: {r: .501960814, g: 1, b: .501960814, a: 1}
+  errorColor: {r: 1, g: .501960814, b: .501960814, a: 1}
 --- !u!1 &1618759570
 GameObject:
   m_ObjectHideFlags: 0
@@ -3746,7 +3744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 1618759570}
   hover: {r: 1, g: 1, b: 1, a: 1}
-  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
+  pressed: {r: .860294104, g: .834991336, b: .7843858, a: 1}
   duration: .200000003
   disabledColor: {r: .5, g: .5, b: .5, a: 1}
   onClick: []
@@ -3828,9 +3826,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textController: {fileID: 1438869206}
   id: 1
-  rightColor: {r: 0, g: 1, b: 0, a: 1}
-  errorColor: {r: 1, g: 0, b: 0, a: 1}
-  otherButtons: []
+  rightColor: {r: .501960814, g: 1, b: .501960814, a: 1}
+  errorColor: {r: 1, g: .501960814, b: .501960814, a: 1}
 --- !u!1 &1754669240
 GameObject:
   m_ObjectHideFlags: 0
@@ -4030,9 +4027,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textController: {fileID: 1438869206}
   id: 2
-  rightColor: {r: 0, g: 1, b: 0, a: 1}
-  errorColor: {r: 1, g: 0, b: 0, a: 1}
-  otherButtons: []
+  rightColor: {r: .501960814, g: 1, b: .501960814, a: 1}
+  errorColor: {r: 1, g: .501960814, b: .501960814, a: 1}
 --- !u!1 &1852084678
 GameObject:
   m_ObjectHideFlags: 0

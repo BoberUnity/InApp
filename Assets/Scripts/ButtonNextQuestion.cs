@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class ButtonNextQuestion : MonoBehaviour
@@ -6,7 +7,7 @@ public class ButtonNextQuestion : MonoBehaviour
   [SerializeField] private int id = 0;
   [SerializeField] private Color rightColor = Color.green;
   [SerializeField] private Color errorColor = Color.red;
-    [SerializeField] private UIButton[] otherButtons;
+  //[SerializeField] private UIButton[] otherButtons;
 
   protected virtual void OnPress(bool isPressed)
   {
@@ -14,11 +15,20 @@ public class ButtonNextQuestion : MonoBehaviour
       {
           textController.CurrQuestion = id;
           GetComponent<UIButton>().defaultColor = errorColor;
-          //GetComponent<UIButton>().hover = errorColor;
-          //GetComponent<UIButton>().enabled = false;//Дописать, чтобы была анимация цвета и скейла
+          //GetComponent<TweenColor>().from = Color.red;
           //textController.NumQuestion++;
+          //TweenColor.Begin(gameObject, GetComponent<UIButton>().duration, errorColor);
+          //GetComponent<TweenColor>().enabled = true;
+          //GetComponent<TweenColor>().from = Color.white;
+          //GetComponent<TweenColor>().to = Color.red;
+          //StartCoroutine(DisableButtons(GetComponent<UIButton>().duration));
           textController.ButtonsActivate(false);
       }
   }
 
+  private IEnumerator DisableButtons(float time)
+  {
+      yield return new WaitForSeconds(time);
+      textController.ButtonsActivate(false);
+  }
 }

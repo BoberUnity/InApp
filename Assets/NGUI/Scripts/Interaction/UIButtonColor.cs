@@ -145,7 +145,11 @@ public class UIButtonColor : UIWidgetContainer
 		if (enabled)
 		{
 			if (!mStarted) Start();
-			TweenColor.Begin(tweenTarget, duration, isPressed ? pressed : (UICamera.IsHighlighted(gameObject) ? hover : mColor));
+            if (isPressed)//B
+            {
+                TweenColor.Begin(tweenTarget, duration, isPressed ? pressed : (UICamera.IsHighlighted(gameObject) ? hover : mColor));
+                Debug.LogWarning("TweenColor");
+            }
 		}
 	}
 
@@ -153,9 +157,9 @@ public class UIButtonColor : UIWidgetContainer
     {
         if (enabled)
         {
-            //if (!mStarted) Start();
-            //TweenColor.Begin(tweenTarget, duration, isOver ? hover : mColor);
-            //mHighlighted = isOver;
+            if (!mStarted) Start();
+            TweenColor.Begin(tweenTarget, duration, isOver ? hover : mColor);
+            mHighlighted = isOver;
         }
     }
 }

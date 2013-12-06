@@ -35,7 +35,7 @@ public class Text : MonoBehaviour
                     if (instance.animation.clip != null)
                     {
                         instance.animation.Play();
-                        StartCoroutine(LoadNextQuestion(instance.animation.clip.length));
+                        StartCoroutine(LoadNextQuestion(instance.animation.clip.length*2));
                     }
                     else
                     {
@@ -178,6 +178,7 @@ public class Text : MonoBehaviour
         labelD.transform.parent.gameObject.GetComponent<UIButton>().enabled = value;
         if (value)
         {
+            //labelA.transform.parent.GetComponent<TweenColor>().from = Color.green;
             labelA.transform.parent.GetComponent<TweenColor>().to = Color.white;
             labelA.transform.parent.GetComponent<UIButton>().defaultColor = Color.white;
 
