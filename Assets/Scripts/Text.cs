@@ -138,7 +138,7 @@ public class Text : MonoBehaviour
       allBox0 = allBox[0];
       allBox1 = allBox[2];
 
-      //NumQuestion = 1;
+      NumQuestion = 1;
       instance = Instantiate(Resources.Load<GameObject>("Prefs/1.1.")) as GameObject;
       
   }
@@ -149,6 +149,7 @@ public class Text : MonoBehaviour
         render3D.Play = true;
         ButtonsActivate(true);
         NumQuestion++;
+        instance = Instantiate(Resources.Load<GameObject>("Prefs/1.2.")) as GameObject;
     }
 
     public void ButtonsActivate(bool value)
