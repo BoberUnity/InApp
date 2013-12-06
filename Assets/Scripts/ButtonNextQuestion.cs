@@ -13,8 +13,10 @@ public class ButtonNextQuestion : MonoBehaviour
   {
       if (!isPressed)
       {
-          textController.CurrQuestion = id;
-          GetComponent<UIButton>().defaultColor = errorColor;
+          if (textController.CurrQuestion(id))
+              GetComponent<UIButton>().defaultColor = rightColor;
+          else
+              GetComponent<UIButton>().defaultColor = errorColor;
           //GetComponent<TweenColor>().from = Color.red;
           //textController.NumQuestion++;
           //TweenColor.Begin(gameObject, GetComponent<UIButton>().duration, errorColor);

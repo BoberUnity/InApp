@@ -22,35 +22,32 @@ public class Text : MonoBehaviour
     private GameObject instance2 = null;
     
     //private bool instance1Old = false;
-
-    public int CurrQuestion
+   
+    public bool CurrQuestion(int id)
     {
-        set
+        if (instance != null)
         {
-            currQuestion = value;
-            if (instance != null)
+            if (instance.GetComponent<Animation>() != null)
             {
-                if (instance.GetComponent<Animation>() != null)
+                if (instance.animation.clip != null)
                 {
-                    if (instance.animation.clip != null)
-                    {
-                        instance.animation.Play();
-                        StartCoroutine(LoadNextQuestion(instance.animation.clip.length*2));
-                    }
-                    else
-                    {
-                        StartCoroutine(LoadNextQuestion(2));//Error
-                        Debug.LogWarning("Prefab animation has not clip");
-                    }
+                    instance.animation.Play();
+                    StartCoroutine(LoadNextQuestion(instance.animation.clip.length));
                 }
                 else
                 {
-                    Debug.LogWarning("Prefab has not animation");
+                    StartCoroutine(LoadNextQuestion(2));//Error
+                    Debug.LogWarning("Prefab animation has not clip");
                 }
             }
             else
-            Debug.LogWarning("Prefab was not found");
+            {
+                Debug.LogWarning("Prefab has not animation");
+            }
         }
+        else
+            Debug.LogWarning("Prefab was not found");
+        return id.ToString() == allBox[numQuestion][3];
     }
 
     public int NumQuestion
