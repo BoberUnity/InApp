@@ -178,17 +178,20 @@ public class Text : MonoBehaviour
         labelD.transform.parent.gameObject.GetComponent<UIButton>().enabled = value;
         if (value)
         {
+            labelA.transform.parent.GetComponent<TweenColor>().to = Color.white;
             labelA.transform.parent.GetComponent<UIButton>().defaultColor = Color.white;
-            labelA.transform.parent.GetComponent<UIButton>().hover = Color.white;
 
+            labelB.transform.parent.GetComponent<TweenColor>().to = Color.white;
             labelB.transform.parent.GetComponent<UIButton>().defaultColor = Color.white;
-            labelB.transform.parent.GetComponent<UIButton>().hover = Color.white;
 
+            if (labelC.transform.parent.GetComponent<TweenColor>() != null)
+                labelC.transform.parent.GetComponent<TweenColor>().to = Color.white;
             labelC.transform.parent.GetComponent<UIButton>().defaultColor = Color.white;
-            labelC.transform.parent.GetComponent<UIButton>().hover = Color.white;
 
+            if (labelD.transform.parent.GetComponent<TweenColor>() != null)
+                labelD.transform.parent.GetComponent<TweenColor>().to = Color.white;
             labelD.transform.parent.GetComponent<UIButton>().defaultColor = Color.white;
-            labelD.transform.parent.GetComponent<UIButton>().hover = Color.white;
+            Debug.LogWarning("Color white");
         }
         
     }

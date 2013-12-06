@@ -14,7 +14,7 @@ public class ButtonNextQuestion : MonoBehaviour
       {
           textController.CurrQuestion = id;
           GetComponent<UIButton>().defaultColor = errorColor;
-          GetComponent<UIButton>().hover = errorColor;
+          //GetComponent<UIButton>().hover = errorColor;
           //GetComponent<UIButton>().enabled = false;//Дописать, чтобы была анимация цвета и скейла
           //textController.NumQuestion++;
           textController.ButtonsActivate(false);

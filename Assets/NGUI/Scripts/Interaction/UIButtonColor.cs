@@ -37,7 +37,7 @@ public class UIButtonColor : UIWidgetContainer
 
 	public float duration = 0.2f;
 
-	protected Color mColor;
+    protected Color mColor;
 	protected bool mStarted = false;
 	protected bool mHighlighted = false;
 
@@ -153,9 +153,9 @@ public class UIButtonColor : UIWidgetContainer
     {
         if (enabled)
         {
-            if (!mStarted) Start();
-            TweenColor.Begin(tweenTarget, duration, isOver ? hover : mColor);
-            mHighlighted = isOver;
+            //if (!mStarted) Start();
+            //TweenColor.Begin(tweenTarget, duration, isOver ? hover : mColor);
+            //mHighlighted = isOver;
         }
     }
 }
