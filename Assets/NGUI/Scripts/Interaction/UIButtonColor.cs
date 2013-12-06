@@ -79,8 +79,8 @@ public class UIButtonColor : UIWidgetContainer
 #if UNITY_EDITOR
 		if (!Application.isPlaying) return;
 #endif
-		if (mStarted && mHighlighted)
-			OnHover(UICamera.IsHighlighted(gameObject));
+        if (mStarted && mHighlighted)
+            OnHover(UICamera.IsHighlighted(gameObject));
 	}
 
 	protected virtual void OnDisable ()
@@ -149,13 +149,13 @@ public class UIButtonColor : UIWidgetContainer
 		}
 	}
 
-	public virtual void OnHover (bool isOver)
-	{
-		if (enabled)
-		{
-			if (!mStarted) Start();
-			TweenColor.Begin(tweenTarget, duration, isOver ? hover : mColor);
-			mHighlighted = isOver;
-		}
-	}
+    public virtual void OnHover(bool isOver)
+    {
+        if (enabled)
+        {
+            if (!mStarted) Start();
+            TweenColor.Begin(tweenTarget, duration, isOver ? hover : mColor);
+            mHighlighted = isOver;
+        }
+    }
 }

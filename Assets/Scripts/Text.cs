@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class Text : MonoBehaviour
@@ -17,40 +18,67 @@ public class Text : MonoBehaviour
     
     private int numQuestion = 1;
     private int currQuestion = 0;//Ответ, который дал юзер
+    private GameObject instance = null;
 
     public int CurrQuestion
     {
-        set { currQuestion = value; }
+        set
+        {
+            currQuestion = value;
+            if (instance != null)
+            {
+                if (instance.GetComponent<Animation>() != null)
+                {
+                    if (instance.animation.clip != null)
+                    {
+                        instance.animation.Play();
+                        StartCoroutine(LoadNextQuestion(instance.animation.clip.length));
+                    }
+                    else
+                    {
+                        StartCoroutine(LoadNextQuestion(2));//Error
+                        Debug.LogWarning("Prefab animation has not clip");
+                    }
+                }
+                else
+                {
+                    Debug.LogWarning("Prefab has not animation");
+                }
+            }
+            else
+            Debug.LogWarning("Prefab was not found");
+        }
     }
 
     public int NumQuestion
     {
         get { return numQuestion;}
-        set { 
-                numQuestion = value;
-                labelQuetion.text = allBox[numQuestion][1];
-                labelA.text = allBox[numQuestion][4];
-                labelB.text = allBox[numQuestion][5];
+        set
+        {
+            numQuestion = value;
+            labelQuetion.text = allBox[numQuestion][1];
+            labelA.text = allBox[numQuestion][4];
+            labelB.text = allBox[numQuestion][5];
+            
+            if (allBox[numQuestion][6] == "\r")
+            {
+                labelC.transform.parent.gameObject.SetActive(false);
+                labelD.transform.parent.gameObject.SetActive(false);
+            }
+            else
+            {
+                labelC.transform.parent.gameObject.SetActive(true);
+                labelC.text = allBox[numQuestion][6];
 
-                if (allBox[numQuestion][6].Length == 1)
-                    labelC.transform.parent.gameObject.SetActive(false);
-                else
-                {
-                    labelC.transform.parent.gameObject.SetActive(true);
-                    labelC.text = allBox[numQuestion][6];
-                }
-
-                if (allBox[numQuestion][7].Length == 1)
+                if (allBox[numQuestion][7] == "\r")
                     labelD.transform.parent.gameObject.SetActive(false);
                 else
                 {
                     labelD.transform.parent.gameObject.SetActive(true);
                     labelD.text = allBox[numQuestion][7];
                 }
-
-            render3D.Play = true;
-
-        }
+            }
+         }
     }
 
     private bool first = true;
@@ -60,8 +88,7 @@ public class Text : MonoBehaviour
   {
       int numStr = 0;//vo vsem doke
       var allText = textAsset.text;//File.ReadAllLines(textAsset);
-      //len = allText.Length;
-      //var lin = 0;
+
       for (int i = 0; i < allText.Length; i++)
       {
           if (allText.Substring(i, 1) == "\n")
@@ -72,6 +99,7 @@ public class Text : MonoBehaviour
           }
       }
       Array.Resize(ref allBox, numStr);
+      
       for (int i = 0; i < numStr; i++)
       {
           Array.Resize(ref allBox[i], 9);
@@ -82,7 +110,9 @@ public class Text : MonoBehaviour
               {
                  first = !first;
                  if (first)
+                 {
                      stlb = Mathf.Min(7, stlb += 1);
+                 }
               }
               else
               {
@@ -106,9 +136,41 @@ public class Text : MonoBehaviour
       }
 
       allBox0 = allBox[0];
-      allBox1 = allBox[1];
-      
+      allBox1 = allBox[2];
 
+      //NumQuestion = 1;
+      instance = Instantiate(Resources.Load<GameObject>("Prefs/1.1.")) as GameObject;
       
   }
+
+    private IEnumerator LoadNextQuestion (float time)
+    {
+        yield return new WaitForSeconds(time);
+        render3D.Play = true;
+        ButtonsActivate(true);
+        NumQuestion++;
+    }
+
+    public void ButtonsActivate(bool value)
+    {
+        labelA.transform.parent.GetComponent<UIButton>().enabled = value;
+        labelB.transform.parent.gameObject.GetComponent<UIButton>().enabled = value;
+        labelC.transform.parent.gameObject.GetComponent<UIButton>().enabled = value;
+        labelD.transform.parent.gameObject.GetComponent<UIButton>().enabled = value;
+        if (value)
+        {
+            labelA.transform.parent.GetComponent<UIButton>().defaultColor = Color.white;
+            labelA.transform.parent.GetComponent<UIButton>().hover = Color.white;
+
+            labelB.transform.parent.GetComponent<UIButton>().defaultColor = Color.white;
+            labelB.transform.parent.GetComponent<UIButton>().hover = Color.white;
+
+            labelC.transform.parent.GetComponent<UIButton>().defaultColor = Color.white;
+            labelC.transform.parent.GetComponent<UIButton>().hover = Color.white;
+
+            labelD.transform.parent.GetComponent<UIButton>().defaultColor = Color.white;
+            labelD.transform.parent.GetComponent<UIButton>().hover = Color.white;
+        }
+        
+    }
 }
