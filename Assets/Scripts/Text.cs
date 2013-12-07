@@ -142,7 +142,8 @@ public class Text : MonoBehaviour
       Debug.LogWarning("Prefs/" + allBox[NumQuestion][0]);
       Debug.LogWarning("L" + allBox[NumQuestion][0].Length);
       instance = Instantiate(Resources.Load<GameObject>("Prefs/" + allBox[NumQuestion][0].Substring(0, allBox[NumQuestion][0].Length - 1))) as GameObject;
-      
+      LoadPref();
+
   }
 
     private IEnumerator LoadNextQuestion (float time)
@@ -164,7 +165,8 @@ public class Text : MonoBehaviour
              instance = Instantiate(Resources.Load<GameObject>("Prefs/" + allBox[NumQuestion][0].Substring(0, allBox[NumQuestion][0].Length - 1))) as GameObject;
              Debug.LogWarning("Resources in path Prefs/" + allBox[NumQuestion][0].Substring(0, allBox[NumQuestion][0].Length - 1)  + " load sucessfull");
         }
-        
+        LoadPref();
+
     }
 
     public void ButtonsActivate(bool value)
@@ -198,5 +200,21 @@ public class Text : MonoBehaviour
     {
         Destroy(instance2);
         Resources.UnloadUnusedAssets();
+    }
+
+    private void LoadPref()
+    {
+        if (instance != null)
+        {
+
+            Camera cam = instance.GetComponentInChildren<Camera>();
+            if (cam != null)
+                cam.rect = new Rect(0.04f, 0.59f, 0.92f, 0.22f);
+            else
+                Debug.LogWarning("Camera was not founded in prefab");
+
+        }
+        else
+            Debug.LogWarning("instance was not founded in prefab");
     }
 }
