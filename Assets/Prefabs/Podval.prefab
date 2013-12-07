@@ -816,6 +816,7 @@ MonoBehaviour:
   animation2: {fileID: 0}
   animationClip1: {fileID: 0}
   animationClip2: {fileID: 0}
+  anchors: []
 --- !u!114 &11400028
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -1,5 +1,5 @@
-2013/12/07-22:14:14.156 e1c Recovering log #197
-2013/12/07-22:14:14.157 e1c Level-0 table #200: started
-2013/12/07-22:14:14.272 e1c Level-0 table #200: 14241 bytes OK
-2013/12/07-22:14:14.388 e1c Delete type=0 #197
-2013/12/07-22:14:14.389 e1c Delete type=3 #195
+2013/12/07-23:06:12.453 e1c Recovering log #201
+2013/12/07-23:06:12.453 e1c Level-0 table #203: started
+2013/12/07-23:06:12.514 e1c Level-0 table #203: 2290 bytes OK
+2013/12/07-23:06:12.639 e1c Delete type=0 #201
+2013/12/07-23:06:12.640 e1c Delete type=3 #199

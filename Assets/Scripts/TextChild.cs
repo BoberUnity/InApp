@@ -166,8 +166,9 @@ public class TextChild : MonoBehaviour
             instance = Instantiate(Resources.Load<GameObject>("Prefs/" + t.allBox[NumQuestion][0].Substring(0, t.allBox[NumQuestion][0].Length - 1))) as GameObject;
             Debug.LogWarning("Resources in path Prefs/" + t.allBox[NumQuestion][0].Substring(0, t.allBox[NumQuestion][0].Length - 1) + " load sucessfull");
         }
-        render3D.Play = true;
+        
         LoadPref();
+        render3D.Play = true;
 
     }
 
@@ -208,13 +209,22 @@ public class TextChild : MonoBehaviour
     {
         if (instance != null)
         {
-
             Camera cam = instance.GetComponentInChildren<Camera>();
             if (cam != null)
             {
-                cam.rect = new Rect(0.04f, 0.59f, 0.92f, 0.22f);
-                render3D.camera2 = render3D.camera1;
-                render3D.camera1 = cam;
+                //cam.rect = new Rect(0.04f, 0.59f, 0.92f, 0.22f);
+                if (render3D.cam1Left)
+                {
+                    render3D.camera1 = cam;
+                    render3D.camera1.rect = new Rect(1.04f, 0.59f, 0.92f, 0.22f);
+                }
+                else
+                {
+                    render3D.camera2 = cam;
+                    render3D.camera2.rect = new Rect(1.04f, 0.59f, 0.92f, 0.22f);
+                }
+
+                render3D.cam1Left = !render3D.cam1Left;
             }
             else
                 Debug.LogWarning("Camera was not founded in prefab");
@@ -231,6 +241,12 @@ public class TextChild : MonoBehaviour
         Debug.LogWarning("Prefs/" + t.allBox[NumQuestion][0]);
         Debug.LogWarning("L" + t.allBox[NumQuestion][0].Length);
         instance = Instantiate(Resources.Load<GameObject>("Prefs/" + t.allBox[NumQuestion][0].Substring(0, t.allBox[NumQuestion][0].Length - 1))) as GameObject;
-        LoadPref();
+        Camera cam = instance.GetComponentInChildren<Camera>();
+        if (cam != null)
+        {
+            //cam.rect = new Rect(0.04f, 0.59f, 0.92f, 0.22f);
+            render3D.camera1 = cam;
+            render3D.camera1.rect = new Rect(0.04f, 0.59f, 0.92f, 0.22f);
+        }
     }
 }
