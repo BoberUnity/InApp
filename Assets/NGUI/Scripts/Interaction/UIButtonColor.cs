@@ -148,7 +148,7 @@ public class UIButtonColor : UIWidgetContainer
             if (isPressed)//B
             {
                 TweenColor.Begin(tweenTarget, duration, isPressed ? pressed : (UICamera.IsHighlighted(gameObject) ? hover : mColor));
-                Debug.LogWarning("TweenColor");
+                //Debug.LogWarning("TweenColor");
             }
 		}
 	}

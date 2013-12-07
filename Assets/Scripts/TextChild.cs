@@ -4,25 +4,18 @@ using UnityEngine;
 
 public class TextChild : MonoBehaviour
 {
-    //[SerializeField] private TextAsset textAsset = null;
     [SerializeField] private Render3D render3D = null;
     [SerializeField] private UILabel labelQuetion = null;
     [SerializeField] private UILabel labelA = null;
     [SerializeField] private UILabel labelB = null;
     [SerializeField] private UILabel labelC = null;
     [SerializeField] private UILabel labelD = null;
-    //[SerializeField] private string[] allBox0;
-    //[SerializeField] private string[] allBox1;
-    //[SerializeField] private string[] linesTemp;
-    //[SerializeField] private string[][] allBox;
     [SerializeField] private Text t = null;//
     private int numQuestion = 0;
     private int currQuestion = 0;//Ответ, который дал юзер
     private GameObject instance = null;
     private GameObject instance2 = null;
     
-    //private bool instance1Old = false;
-   
     public bool CurrQuestion(int id)
     {
         if (instance != null)
@@ -81,8 +74,8 @@ public class TextChild : MonoBehaviour
          }
     }
 
-    private bool first = true;
-    private int stlb = 0;
+    //private bool first = true;
+    //private int stlb = 0;
 
     private void Start()
     {
@@ -213,7 +206,7 @@ public class TextChild : MonoBehaviour
             if (cam != null)
             {
                 //cam.rect = new Rect(0.04f, 0.59f, 0.92f, 0.22f);
-                if (render3D.cam1Left)
+                if (render3D.Cam1Left)
                 {
                     render3D.camera1 = cam;
                     render3D.camera1.rect = new Rect(1.04f, 0.59f, 0.92f, 0.22f);
@@ -224,7 +217,7 @@ public class TextChild : MonoBehaviour
                     render3D.camera2.rect = new Rect(1.04f, 0.59f, 0.92f, 0.22f);
                 }
 
-                render3D.cam1Left = !render3D.cam1Left;
+                render3D.Cam1Left = !render3D.Cam1Left;
             }
             else
                 Debug.LogWarning("Camera was not founded in prefab");
