@@ -2925,7 +2925,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400346}
-  - 114: {fileID: 11400002}
   m_Layer: 9
   m_Name: car02_prefab
   m_TagString: Untagged
@@ -3254,7 +3253,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400386}
-  - 114: {fileID: 11400004}
   m_Layer: 9
   m_Name: car01_prefab
   m_TagString: Untagged
@@ -5796,7 +5794,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400688}
-  - 114: {fileID: 11400008}
   m_Layer: 9
   m_Name: car03_prefab
   m_TagString: Untagged
@@ -24987,42 +24984,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   updateInterval: 1
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04053e2e05691fc44a6967d0a62b0544, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 12
---- !u!114 &11400004
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04053e2e05691fc44a6967d0a62b0544, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 25
---- !u!114 &11400008
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04053e2e05691fc44a6967d0a62b0544, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 18
 --- !u!122 &12200000
 Halo:
   m_ObjectHideFlags: 1
