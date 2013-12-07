@@ -5,7 +5,7 @@ public class Render3D : MonoBehaviour
     [SerializeField] private Transform screen1 = null;
     [SerializeField] private Transform screen2 = null;
     [SerializeField] private Transform scroll = null;
-    [SerializeField] private Text textController = null;
+    [SerializeField] private TextChild textController = null;
     [SerializeField] private float speed = 1;
     [SerializeField] private bool play = false;
     private float actualAspect = 0.75f;

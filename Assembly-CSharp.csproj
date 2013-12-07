@@ -174,12 +174,15 @@
      <Compile Include="Assets\Scripts\ButtonLoadScene.cs" />
      <Compile Include="Assets\Scripts\ButtonMission.cs" />
      <Compile Include="Assets\Scripts\ButtonNextQuestion.cs" />
+     <Compile Include="Assets\Scripts\ButtonSelectScene.cs" />
      <Compile Include="Assets\Scripts\CarBehaviour.cs" />
      <Compile Include="Assets\Scripts\DontDestroy.cs" />
      <Compile Include="Assets\Scripts\InterfaceScale.cs" />
      <Compile Include="Assets\Scripts\MessageWindow.cs" />
      <Compile Include="Assets\Scripts\Render3D.cs" />
      <Compile Include="Assets\Scripts\Text.cs" />
+     <Compile Include="Assets\Scripts\TextChild.cs" />
+     <Compile Include="Assets\Scripts\TextControllerCreator.cs" />
      <Compile Include="Assets\Scripts\Utility\Blink.cs" />
      <Compile Include="Assets\Scripts\Utility\HUDFPS.cs" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Depth Cutout.shader" />

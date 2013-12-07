@@ -1777,7 +1777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c67a97f7599d41b47a81134c4c436000, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textController: {fileID: 11400110}
+  textController: {fileID: 0}
   id: 3
   rightColor: {r: .501960814, g: 1, b: .501960814, a: 1}
   errorColor: {r: 1, g: .501960814, b: .501960814, a: 1}
@@ -2735,13 +2735,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textAsset: {fileID: 4900000, guid: fbacae7b413950f4090537b4b037f872, type: 3}
-  render3D: {fileID: 11400148}
-  labelQuetion: {fileID: 11400046}
-  labelA: {fileID: 11400030}
-  labelB: {fileID: 11400080}
-  labelC: {fileID: 11400070}
-  labelD: {fileID: 11400150}
-  firstQues: {fileID: 0}
   allBox0:
   - 
   - 
@@ -3663,7 +3656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c67a97f7599d41b47a81134c4c436000, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textController: {fileID: 11400110}
+  textController: {fileID: 0}
   id: 4
   rightColor: {r: .501960814, g: 1, b: .501960814, a: 1}
   errorColor: {r: 1, g: .501960814, b: .501960814, a: 1}
@@ -3747,7 +3740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c67a97f7599d41b47a81134c4c436000, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textController: {fileID: 11400110}
+  textController: {fileID: 0}
   id: 1
   rightColor: {r: .501960814, g: 1, b: .501960814, a: 1}
   errorColor: {r: 1, g: .501960814, b: .501960814, a: 1}
@@ -3855,7 +3848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c67a97f7599d41b47a81134c4c436000, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textController: {fileID: 11400110}
+  textController: {fileID: 0}
   id: 2
   rightColor: {r: .501960814, g: 1, b: .501960814, a: 1}
   errorColor: {r: 1, g: .501960814, b: .501960814, a: 1}
@@ -3914,7 +3907,7 @@ MonoBehaviour:
   screen1: {fileID: 400052}
   screen2: {fileID: 400048}
   scroll: {fileID: 400058}
-  textController: {fileID: 11400110}
+  textController: {fileID: 0}
   speed: 2
   play: 0
   camera1: {fileID: 0}

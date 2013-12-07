@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ButtonNextQuestion : MonoBehaviour
 {
-  [SerializeField] private Text textController = null;
+  [SerializeField] private TextChild textController = null;
   [SerializeField] private int id = 0;
   [SerializeField] private Color rightColor = Color.green;
   [SerializeField] private Color errorColor = Color.red;
