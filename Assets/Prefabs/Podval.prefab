@@ -812,7 +812,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b1ed272fadc323449139a3fd1f19fd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 1
+  animation1: {fileID: 0}
+  animation2: {fileID: 0}
+  animationClip1: {fileID: 0}
+  animationClip2: {fileID: 0}
 --- !u!114 &11400028
 MonoBehaviour:
   m_ObjectHideFlags: 1

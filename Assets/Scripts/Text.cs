@@ -11,12 +11,13 @@ public class Text : MonoBehaviour
     [SerializeField] private UILabel labelB = null;
     [SerializeField] private UILabel labelC = null;
     [SerializeField] private UILabel labelD = null;
+    [SerializeField] private GameObject firstQues = null;
     [SerializeField] private string[] allBox0;
     [SerializeField] private string[] allBox1;
     [SerializeField] private string[] linesTemp;
     [SerializeField] private string[][] allBox;
     
-    private int numQuestion = 1;
+    private int numQuestion = 0;
     private int currQuestion = 0;//Ответ, который дал юзер
     private GameObject instance = null;
     private GameObject instance2 = null;
@@ -138,11 +139,7 @@ public class Text : MonoBehaviour
       allBox0 = allBox[0];
       allBox1 = allBox[2];
 
-      NumQuestion = 1;
-      Debug.LogWarning("Prefs/" + allBox[NumQuestion][0]);
-      Debug.LogWarning("L" + allBox[NumQuestion][0].Length);
-      instance = Instantiate(Resources.Load<GameObject>("Prefs/" + allBox[NumQuestion][0].Substring(0, allBox[NumQuestion][0].Length - 1))) as GameObject;
-      LoadPref();
+      
 
   }
 
@@ -150,7 +147,7 @@ public class Text : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         Debug.LogWarning("LoadNextQuestion");
-        render3D.Play = true;
+        
         ButtonsActivate(true);
         NumQuestion++;
 
@@ -165,13 +162,14 @@ public class Text : MonoBehaviour
              instance = Instantiate(Resources.Load<GameObject>("Prefs/" + allBox[NumQuestion][0].Substring(0, allBox[NumQuestion][0].Length - 1))) as GameObject;
              Debug.LogWarning("Resources in path Prefs/" + allBox[NumQuestion][0].Substring(0, allBox[NumQuestion][0].Length - 1)  + " load sucessfull");
         }
+        render3D.Play = true;
         LoadPref();
 
     }
 
     public void ButtonsActivate(bool value)
     {
-        labelA.transform.parent.GetComponent<UIButton>().enabled = value;
+        labelA.transform.parent.gameObject.GetComponent<UIButton>().enabled = value;
         labelB.transform.parent.gameObject.GetComponent<UIButton>().enabled = value;
         labelC.transform.parent.gameObject.GetComponent<UIButton>().enabled = value;
         labelD.transform.parent.gameObject.GetComponent<UIButton>().enabled = value;
@@ -209,12 +207,25 @@ public class Text : MonoBehaviour
 
             Camera cam = instance.GetComponentInChildren<Camera>();
             if (cam != null)
+            {
                 cam.rect = new Rect(0.04f, 0.59f, 0.92f, 0.22f);
+                render3D.camera2 = render3D.camera1;
+                render3D.camera1 = cam;
+            }
             else
                 Debug.LogWarning("Camera was not founded in prefab");
 
         }
         else
             Debug.LogWarning("instance was not founded in prefab");
+    }
+
+    public void StartFirstQuestion()
+    {
+        NumQuestion = 1;
+        Debug.LogWarning("Prefs/" + allBox[NumQuestion][0]);
+        Debug.LogWarning("L" + allBox[NumQuestion][0].Length);
+        instance = Instantiate(Resources.Load<GameObject>("Prefs/" + allBox[NumQuestion][0].Substring(0, allBox[NumQuestion][0].Length - 1))) as GameObject;
+        LoadPref();
     }
 }

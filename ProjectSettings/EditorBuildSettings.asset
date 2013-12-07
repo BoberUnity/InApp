@@ -6,6 +6,4 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/UpgradeLoc.unity
-  - enabled: 1
-    path: Assets/Scenes/Victorina2.unity
+    path: Assets/Update+Victorina.unity
