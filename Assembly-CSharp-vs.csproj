@@ -172,7 +172,6 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
      <Compile Include="Assets\Scripts\ButtonBuy.cs" />
      <Compile Include="Assets\Scripts\ButtonLoadScene.cs" />
-     <Compile Include="Assets\Scripts\ButtonMission.cs" />
      <Compile Include="Assets\Scripts\ButtonNextQuestion.cs" />
      <Compile Include="Assets\Scripts\ButtonSelectScene.cs" />
      <Compile Include="Assets\Scripts\CarBehaviour.cs" />

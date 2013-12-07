@@ -87,7 +87,9 @@ public class TextChild : MonoBehaviour
     private void Start()
     {
         t = GameObject.Find("TextController(Clone)").GetComponent<Text>();
-        StartFirstQuestion();
+        NumQuestion = 1;
+
+        StartCoroutine(StartFirstQuestion(0.02f));
     }
 
   //private void Start()
@@ -222,9 +224,10 @@ public class TextChild : MonoBehaviour
             Debug.LogWarning("instance was not founded in prefab");
     }
 
-    public void StartFirstQuestion()
+    private IEnumerator StartFirstQuestion(float time)
     {
-        NumQuestion = 1;
+        yield return new WaitForSeconds(time);
+        //NumQuestion = 1;
         Debug.LogWarning("Prefs/" + t.allBox[NumQuestion][0]);
         Debug.LogWarning("L" + t.allBox[NumQuestion][0].Length);
         instance = Instantiate(Resources.Load<GameObject>("Prefs/" + t.allBox[NumQuestion][0].Substring(0, t.allBox[NumQuestion][0].Length - 1))) as GameObject;

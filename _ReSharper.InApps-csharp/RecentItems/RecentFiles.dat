@@ -21,15 +21,15 @@
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:NGUI/d:Scripts/d:Interaction/f:UIButton.cs" caret="1368" fromTop="0" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:NGUI/d:Scripts/d:Interaction/f:UIButtonColor.cs" caret="3065" fromTop="15" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:InterfaceScale.cs" caret="1065" fromTop="23" />
-    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:Render3D.cs" caret="1480" fromTop="18" />
-    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonNextQuestion.cs" caret="655" fromTop="18" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonLoadScene.cs" caret="506" fromTop="15" />
-    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonMission.cs" caret="67" fromTop="4" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:MessageWindow.cs" caret="3082" fromTop="17" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonSelectScene.cs" caret="105" fromTop="4" />
-    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:Text.cs" caret="487" fromTop="0" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:TextControllerCreator.cs" caret="314" fromTop="9" />
-    <File id="7020124F-9FFC-4AC3-8F3D-AAB8E0240759/f:TextChild.cs" caret="0" fromTop="0" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonNextQuestion.cs" caret="137" fromTop="0" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:Render3D.cs" caret="269" fromTop="7" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:Text.cs" caret="603" fromTop="0" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonMission.cs" caret="0" fromTop="0" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:TextChild.cs" caret="3120" fromTop="19" />
   </RecentFiles>
   <RecentEdits>
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitProduct.cs" caret="2014" fromTop="15" />
@@ -46,13 +46,14 @@
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:NGUI/d:Scripts/d:UI/f:UILocalize.cs" caret="921" fromTop="17" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:NGUI/d:Scripts/d:Interaction/f:UIButton.cs" caret="1368" fromTop="0" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:NGUI/d:Scripts/d:Interaction/f:UIButtonColor.cs" caret="3065" fromTop="15" />
-    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonNextQuestion.cs" caret="520" fromTop="16" />
-    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:Render3D.cs" caret="1192" fromTop="15" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:InterfaceScale.cs" caret="662" fromTop="17" />
-    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonMission.cs" caret="67" fromTop="4" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonLoadScene.cs" caret="506" fromTop="15" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonSelectScene.cs" caret="222" fromTop="10" />
-    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:Text.cs" caret="487" fromTop="13" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:TextControllerCreator.cs" caret="314" fromTop="9" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonMission.cs" caret="103" fromTop="4" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonNextQuestion.cs" caret="137" fromTop="5" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:Render3D.cs" caret="269" fromTop="7" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:Text.cs" caret="638" fromTop="15" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:TextChild.cs" caret="3114" fromTop="19" />
   </RecentEdits>
 </RecentFiles>

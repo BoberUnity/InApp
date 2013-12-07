@@ -861,6 +861,7 @@ GameObject:
   - 114: {fileID: 308703971}
   - 114: {fileID: 308703970}
   - 114: {fileID: 308703974}
+  - 114: {fileID: 308703975}
   m_Layer: 8
   m_Name: ButtonBack
   m_TagString: Untagged
@@ -941,7 +942,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 40, y: 40, z: 0}
+  m_Size: {x: 40, y: 40, z: 14.8100004}
   m_Center: {x: 0, y: 0, z: -.25}
 --- !u!114 &308703974
 MonoBehaviour:
@@ -958,6 +959,18 @@ MonoBehaviour:
   position: 1
   scaleY: 0
   scaleX: 0
+--- !u!114 &308703975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 308703968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f351eabf2ebc504da22f20f027b44c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
 --- !u!1 &323772200
 GameObject:
   m_ObjectHideFlags: 0
