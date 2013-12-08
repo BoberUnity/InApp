@@ -68,7 +68,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: 03 Purchase_button
     x: 0
-    y: 268
+    y: 117
     width: 131
     height: 63
     borderLeft: 0
@@ -81,7 +81,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: ButtonAnswer
     x: 0
-    y: 332
+    y: 181
     width: 560
     height: 72
     borderLeft: 0
@@ -172,7 +172,7 @@ MonoBehaviour:
     paddingBottom: 1
   - name: Counter
     x: 132
-    y: 307
+    y: 156
     width: 204
     height: 24
     borderLeft: 0
@@ -196,9 +196,22 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: Head
+    x: 0
+    y: 363
+    width: 640
+    height: 150
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: Podval
     x: 0
-    y: 405
+    y: 254
     width: 640
     height: 108
     borderLeft: 0

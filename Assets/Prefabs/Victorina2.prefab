@@ -1540,6 +1540,7 @@ MonoBehaviour:
   manualHeight: 960
   minimumHeight: 320
   maximumHeight: 2048
+  head: 0
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1

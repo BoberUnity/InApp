@@ -21,6 +21,7 @@ public class UIRootEditor : Editor
 		if (scaling != UIRoot.Scaling.PixelPerfect)
 		{
 			NGUIEditorTools.DrawProperty("Manual Height", serializedObject, "manualHeight");
+            NGUIEditorTools.DrawProperty("Head", serializedObject, "head");
 		}
 
 		if (scaling != UIRoot.Scaling.FixedSize)

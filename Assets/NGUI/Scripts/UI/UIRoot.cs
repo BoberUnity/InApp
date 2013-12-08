@@ -54,6 +54,8 @@ public class UIRoot : MonoBehaviour
 
 	public int maximumHeight = 1536;
 
+    public bool head = false;
+
 	/// <summary>
 	/// UI Root's active height, based on the size of the screen.
 	/// </summary>
@@ -119,7 +121,11 @@ public class UIRoot : MonoBehaviour
 
 	protected virtual void Start ()
 	{
-        manualHeight = 639 * Screen.height / Screen.width;//Bober
+        if (!head)
+            manualHeight = 639 * Screen.height / Screen.width;//Bober
+        else
+            manualHeight = (47 * 16 * Screen.height)/ (9 * Screen.width);
+
         UIOrthoCamera oc = GetComponentInChildren<UIOrthoCamera>();
 
 		if (oc != null)
