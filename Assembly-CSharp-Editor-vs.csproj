@@ -158,6 +158,9 @@
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (SoftClip).shader" />
      <None Include="Assets\Shaders\Decal.shader" />
      <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
+ <Reference Include="Assembly-UnityScript">
+ <HintPath>Library\ScriptAssemblies\Assembly-UnityScript.dll</HintPath>
+ </Reference>
  <Reference Include="Prime31MenuItem">
  <HintPath>Assets\Editor\Prime31\Prime31MenuItem.dll</HintPath>
  </Reference>

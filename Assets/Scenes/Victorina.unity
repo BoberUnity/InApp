@@ -151,6 +151,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 87}
   - 114: {fileID: 93}
+  - 114: {fileID: 45}
   m_Layer: 8
   m_Name: UIRoot
   m_TagString: Untagged
@@ -158,6 +159,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &45
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 44}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7427a611c3241a94dbbd39a645c734bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textControllerPref: {fileID: 100000, guid: 3cc37b6a9785baa4b9c3c9ec3236c721, type: 2}
 --- !u!4 &78
 Transform:
   m_ObjectHideFlags: 0
@@ -201,7 +214,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 42}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.951729894, y: .950668871, z: 0}
+  m_LocalPosition: {x: -1.60400999, y: .802675545, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 81}
@@ -214,7 +227,7 @@ Transform:
   m_GameObject: {fileID: 44}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .00175901491, y: .00175901491, z: .00175901491}
+  m_LocalScale: {x: .00208333344, y: .00208333344, z: .00208333344}
   m_Children:
   - {fileID: 79}
   - {fileID: 78}
@@ -270,7 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scalingStyle: 1
-  manualHeight: 1137
+  manualHeight: 960
   minimumHeight: 320
   maximumHeight: 2048
   head: 0
@@ -373,17 +386,17 @@ MonoBehaviour:
   cullWhileDragging: 0
   alwaysOnScreen: 0
   worldToLocal:
-    e00: 568.5
+    e00: 479.999969
     e01: 0
     e02: 0
     e03: 0
     e10: 0
-    e11: 568.5
+    e11: 479.999969
     e12: 0
     e13: 0
     e20: 0
     e21: 0
-    e22: 568.5
+    e22: 479.999969
     e23: 0
     e30: 0
     e31: 0
@@ -1749,7 +1762,6 @@ GameObject:
   - 4: {fileID: 997130983}
   - 33: {fileID: 997130985}
   - 23: {fileID: 997130984}
-  - 114: {fileID: 997130986}
   m_Layer: 8
   m_Name: Screen2Back
   m_TagString: Untagged
@@ -1764,8 +1776,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 997130982}
   m_LocalRotation: {x: 2.95693103e-15, y: .707106829, z: -.707106829, w: 2.95693103e-15}
-  m_LocalPosition: {x: 1.5, y: 4.50015068e-05, z: -.0100001311}
-  m_LocalScale: {x: .108000003, y: 1, z: .0480000004}
+  m_LocalPosition: {x: 1.13, y: 4.50015068e-05, z: -.0100001311}
+  m_LocalScale: {x: .105999999, y: 1, z: .0460000001}
   m_Children: []
   m_Father: {fileID: 1933910786}
 --- !u!23 &997130984
@@ -1775,7 +1787,7 @@ Renderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 997130982}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
@@ -1798,21 +1810,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 997130982}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &997130986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 59ceb9c9c93212c4ab67da1904507192,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 997130982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 844eba72b2a53074e8f016625be78a11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  position: 0
-  scaleY: 0
-  scaleX: 1
 --- !u!1 &1090986108
 GameObject:
   m_ObjectHideFlags: 0
@@ -1892,7 +1889,6 @@ GameObject:
   - 4: {fileID: 1128824681}
   - 33: {fileID: 1128824683}
   - 23: {fileID: 1128824682}
-  - 114: {fileID: 1128824684}
   m_Layer: 8
   m_Name: Screen1Back
   m_TagString: Untagged
@@ -1908,7 +1904,7 @@ Transform:
   m_GameObject: {fileID: 1128824680}
   m_LocalRotation: {x: 4.4478293e-16, y: .707106829, z: -.707106829, w: 4.4478293e-16}
   m_LocalPosition: {x: 0, y: 6.26146793e-05, z: -.00999999978}
-  m_LocalScale: {x: .108000003, y: 1, z: .0480000004}
+  m_LocalScale: {x: .105999999, y: 1, z: .0460000001}
   m_Children: []
   m_Father: {fileID: 1933910786}
 --- !u!23 &1128824682
@@ -1918,7 +1914,7 @@ Renderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1128824680}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
@@ -1941,21 +1937,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1128824680}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1128824684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 59ceb9c9c93212c4ab67da1904507192,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1128824680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 844eba72b2a53074e8f016625be78a11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  position: 0
-  scaleY: 0
-  scaleX: 1
 --- !u!1 &1129236069
 GameObject:
   m_ObjectHideFlags: 0
@@ -2183,17 +2164,17 @@ MonoBehaviour:
   cullWhileDragging: 0
   alwaysOnScreen: 0
   worldToLocal:
-    e00: 568.5
+    e00: 479.999969
     e01: 0
     e02: 0
     e03: -5
     e10: 0
-    e11: 568.5
+    e11: 479.999969
     e12: 0
     e13: -65
     e20: 0
     e21: 0
-    e22: 568.5
+    e22: 479.999969
     e23: 0
     e30: 0
     e31: 0
@@ -2459,7 +2440,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1352142159}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.951729894, y: 569.450684, z: 0}
+  m_LocalPosition: {x: -1.60400999, y: 480.802643, z: 0}
   m_LocalScale: {x: 1, y: 1, z: .9999125}
   m_Children:
   - {fileID: 308703969}
@@ -3336,7 +3317,7 @@ Transform:
   m_GameObject: {fileID: 1939852653}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .0135135138, y: .0135135138, z: .0135135138}
+  m_LocalScale: {x: .0160000008, y: .0160000008, z: .0160000008}
   m_Children:
   - {fileID: 1688079267}
   - {fileID: 2108778961}
@@ -3354,7 +3335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scalingStyle: 1
-  manualHeight: 148
+  manualHeight: 125
   minimumHeight: 320
   maximumHeight: 2048
   head: 1
@@ -3381,7 +3362,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1960676291}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.917658925, y: -73.0864182, z: 0}
+  m_LocalPosition: {x: -1.54707789, y: -61.7283936, z: 0}
   m_LocalScale: {x: 1.00002503, y: 1.00002503, z: 1.00002503}
   m_Children:
   - {fileID: 1237025739}
@@ -3538,17 +3519,17 @@ MonoBehaviour:
   cullWhileDragging: 0
   alwaysOnScreen: 0
   worldToLocal:
-    e00: 74
+    e00: 62.4999962
     e01: 0
     e02: 0
     e03: 0
     e10: 0
-    e11: 74
+    e11: 62.4999962
     e12: 0
     e13: 0
     e20: 0
     e21: 0
-    e22: 74
+    e22: 62.4999962
     e23: 0
     e30: 0
     e31: 0

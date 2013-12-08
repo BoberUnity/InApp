@@ -79,10 +79,10 @@ public class TextChild : MonoBehaviour
 
     private void Start()
     {
-        t = GameObject.Find("TextController(Clone)").GetComponent<Text>();
-        NumQuestion = 1;
+        //t = GameObject.Find("TextController(Clone)").GetComponent<Text>();
+        //NumQuestion = 1;
 
-        StartCoroutine(StartFirstQuestion(0.02f));
+        StartCoroutine(StartFirstQuestion(0.01f));
     }
 
   //private void Start()
@@ -230,6 +230,8 @@ public class TextChild : MonoBehaviour
     private IEnumerator StartFirstQuestion(float time)
     {
         yield return new WaitForSeconds(time);
+        t = GameObject.Find("TextController(Clone)").GetComponent<Text>();
+        NumQuestion = 1;
         //NumQuestion = 1;
         Debug.LogWarning("Prefs/" + t.allBox[NumQuestion][0]);
         Debug.LogWarning("L" + t.allBox[NumQuestion][0].Length);

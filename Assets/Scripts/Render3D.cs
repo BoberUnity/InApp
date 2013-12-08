@@ -30,6 +30,7 @@ public class Render3D : MonoBehaviour
     private void Start()
     {
         actualAspect = (float)Screen.height / (float)Screen.width;
+        transform.localScale = new Vector3(16/(actualAspect *9), 16/(actualAspect *9), 1);
         viewHeight = 0.22f*1.7777f/actualAspect;
     }
 
@@ -37,10 +38,7 @@ public class Render3D : MonoBehaviour
     {
         y = (scroll.localPosition.y - 65) / (1150 / (1.7777f / actualAspect));//scroll.localPosition.y / (321 * actualAspect) + 0.28f;//Движение за скроллом
 
-        if (camera1 != null)
-            camera1.rect = (new Rect(screen1.localPosition.x / 1.5f + 0.04f, y + 0.59f, 0.92f, viewHeight));
-        if (camera2 != null)
-            camera2.rect = (new Rect(screen2.localPosition.x / 1.5f + 0.04f, y + 0.59f, 0.92f, viewHeight));
+        
         
         if (play)//Анимация
         {
@@ -52,9 +50,9 @@ public class Render3D : MonoBehaviour
 
             
 
-            if (screen1.localPosition.x < -1.5f)
+            if (screen1.localPosition.x < -1.13f)
             {
-                screen1.localPosition = new Vector3(1.5f, screen1.localPosition.y, screen1.localPosition.z);
+                screen1.localPosition = new Vector3(1.13f, screen1.localPosition.y, screen1.localPosition.z);
                 screen2.localPosition = new Vector3(0, screen1.localPosition.y, screen1.localPosition.z);
                 play = false;
                 textController.UnloadPref();
@@ -62,15 +60,20 @@ public class Render3D : MonoBehaviour
                 camera2.rect = (new Rect(0.04f, y + 0.59f, 0.92f, viewHeight));
             }
 
-            if (screen2.localPosition.x < -1.5f)
+            if (screen2.localPosition.x < -1.13f)
             {
-                screen2.localPosition = new Vector3(1.5f, screen2.localPosition.y, screen2.localPosition.z);
+                screen2.localPosition = new Vector3(1.13f, screen2.localPosition.y, screen2.localPosition.z);
                 screen1.localPosition = new Vector3(0, screen1.localPosition.y, screen1.localPosition.z);
                 textController.UnloadPref();
                 play = false;
                 camera2.rect = (new Rect(1.04f, y + 0.59f, 0.92f, viewHeight));
                 camera1.rect = (new Rect(0.04f, y + 0.59f, 0.92f, viewHeight));
             }
-        }   
+        }
+
+        if (camera1 != null)
+            camera1.rect = (new Rect(screen1.localPosition.x / 1.13f + 0.04f, y + 0.59f, 0.92f, viewHeight));
+        if (camera2 != null)
+            camera2.rect = (new Rect(screen2.localPosition.x / 1.13f + 0.04f, y + 0.59f, 0.92f, viewHeight));
     }
 }
