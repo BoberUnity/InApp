@@ -461,7 +461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d0b5f3bbe925a408bd595c79d0bf63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mColor: {r: .501960814, g: 1, b: .501960814, a: 1}
+  mColor: {r: .250980407, g: .501960814, b: .250980407, a: 1}
   mPivot: 4
   mWidth: 36
   mHeight: 56
@@ -476,7 +476,7 @@ MonoBehaviour:
   mEncoding: 1
   mMaxLineCount: 0
   mGradientBottom: {r: .699999988, g: .699999988, b: .699999988, a: 1}
-  mEffectStyle: 2
+  mEffectStyle: 0
   mEffectColor: {r: 0, g: .501960814, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
@@ -2387,7 +2387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d0b5f3bbe925a408bd595c79d0bf63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mColor: {r: .501960814, g: 1, b: .501960814, a: 1}
+  mColor: {r: .250980407, g: .501960814, b: .250980407, a: 1}
   mPivot: 4
   mWidth: 36
   mHeight: 56
@@ -2402,7 +2402,7 @@ MonoBehaviour:
   mEncoding: 1
   mMaxLineCount: 0
   mGradientBottom: {r: .699999988, g: .699999988, b: .699999988, a: 1}
-  mEffectStyle: 2
+  mEffectStyle: 0
   mEffectColor: {r: 0, g: .501960814, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
@@ -3204,7 +3204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d0b5f3bbe925a408bd595c79d0bf63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mColor: {r: .501960814, g: 1, b: .501960814, a: 1}
+  mColor: {r: .250980407, g: .501960814, b: .250980407, a: 1}
   mPivot: 4
   mWidth: 36
   mHeight: 56
@@ -3219,7 +3219,7 @@ MonoBehaviour:
   mEncoding: 1
   mMaxLineCount: 0
   mGradientBottom: {r: .699999988, g: .699999988, b: .699999988, a: 1}
-  mEffectStyle: 2
+  mEffectStyle: 0
   mEffectColor: {r: 0, g: .501960814, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
@@ -3570,7 +3570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d0b5f3bbe925a408bd595c79d0bf63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mColor: {r: .501960814, g: 1, b: .501960814, a: 1}
+  mColor: {r: .250980407, g: .501960814, b: .250980407, a: 1}
   mPivot: 4
   mWidth: 40
   mHeight: 56
@@ -3585,7 +3585,7 @@ MonoBehaviour:
   mEncoding: 1
   mMaxLineCount: 0
   mGradientBottom: {r: .699999988, g: .699999988, b: .699999988, a: 1}
-  mEffectStyle: 2
+  mEffectStyle: 0
   mEffectColor: {r: 0, g: .501960814, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}

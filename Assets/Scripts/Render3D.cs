@@ -13,7 +13,6 @@ public class Render3D : MonoBehaviour
     public Camera camera1 = null;
     public Camera camera2 = null;
     private bool cam1Left = false;
-
     private float y = 0;
 
     public bool Play

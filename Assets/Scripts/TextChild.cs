@@ -160,7 +160,7 @@ public class TextChild : MonoBehaviour
             //Debug.LogWarning("Resources in path Prefs/" + t.allBox[NumQuestion][0].Substring(0, t.allBox[NumQuestion][0].Length - 1) + " load sucessfull");
         }
         
-        LoadPref();
+        SetCamera();
         if (render3D.Cam1Left)
             SetLayer(instance, 10);
         else
@@ -202,7 +202,7 @@ public class TextChild : MonoBehaviour
         Resources.UnloadUnusedAssets();
     }
 
-    private void LoadPref()
+    private void SetCamera()
     {
         if (instance != null)
         {
@@ -265,6 +265,8 @@ public class TextChild : MonoBehaviour
             foreach (Light l in ls)
             {
                 l.cullingMask = 1 << layer;
+                l.gameObject.SetActive(false);
+                l.gameObject.SetActive(true);
             }
 
             Camera[] cams = inst.GetComponentsInChildren<Camera>();
@@ -275,6 +277,14 @@ public class TextChild : MonoBehaviour
                 if (al != null)
                     Destroy(al);
             }
+
+            Projector[] prs = inst.GetComponentsInChildren<Projector>();
+            foreach (Projector p in prs)
+            {
+                p.gameObject.SetActive(false);
+                p.gameObject.SetActive(true);
+            }
+            
         }
     }
 }
