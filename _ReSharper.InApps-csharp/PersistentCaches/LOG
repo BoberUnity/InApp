@@ -1,5 +1,5 @@
-2013/12/08-23:28:05.088 f68 Recovering log #210
-2013/12/08-23:28:05.128 f68 Level-0 table #213: started
-2013/12/08-23:28:05.218 f68 Level-0 table #213: 12003 bytes OK
-2013/12/08-23:28:05.278 f68 Delete type=0 #210
-2013/12/08-23:28:05.278 f68 Delete type=3 #208
+2013/12/09-16:45:11.834 cb4 Recovering log #214
+2013/12/09-16:45:11.854 cb4 Level-0 table #216: started
+2013/12/09-16:45:11.914 cb4 Level-0 table #216: 5840 bytes OK
+2013/12/09-16:45:11.974 cb4 Delete type=0 #214
+2013/12/09-16:45:11.974 cb4 Delete type=3 #212
