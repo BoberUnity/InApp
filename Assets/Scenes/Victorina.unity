@@ -214,7 +214,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 42}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.803571403, y: .802675545, z: 0}
+  m_LocalPosition: {x: -.951729894, y: .950668871, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 81}
@@ -2440,7 +2440,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1352142159}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.803571403, y: 480.802643, z: 0}
+  m_LocalPosition: {x: -.951729894, y: 569.450684, z: 0}
   m_LocalScale: {x: 1, y: 1, z: .9999125}
   m_Children:
   - {fileID: 308703969}
@@ -2878,7 +2878,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1688079267}
   - 20: {fileID: 1688079270}
-  - 81: {fileID: 1688079269}
   - 114: {fileID: 1688079268}
   m_Layer: 11
   m_Name: 2D CameraHead
@@ -2934,14 +2933,6 @@ MonoBehaviour:
   submitKey1: 330
   cancelKey0: 27
   cancelKey1: 331
---- !u!81 &1688079269
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8100000, guid: 1b6a9d624950668408d22578690bbe1d,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1688079266}
-  m_Enabled: 1
 --- !u!20 &1688079270
 Camera:
   m_ObjectHideFlags: 0
@@ -3291,7 +3282,6 @@ MonoBehaviour:
   scroll: {fileID: 1196046849}
   textController: {fileID: 1438869206}
   speed: 1
-  wh: 1
   camera1: {fileID: 0}
   camera2: {fileID: 0}
 --- !u!1 &1939852653
@@ -3363,7 +3353,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1960676291}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.775049746, y: -61.7283936, z: 0}
+  m_LocalPosition: {x: -.917658925, y: -73.0864182, z: 0}
   m_LocalScale: {x: 1.00002503, y: 1.00002503, z: 1.00002503}
   m_Children:
   - {fileID: 1237025739}

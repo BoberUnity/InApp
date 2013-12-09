@@ -7,8 +7,6 @@ public class Render3D : MonoBehaviour
     [SerializeField] private Transform scroll = null;
     [SerializeField] private TextChild textController = null;
     [SerializeField] private float speed = 1;
-    [SerializeField]
-    private float wh = 1;
     private bool play = false;
     private float actualAspect = 0.75f;
     private float viewHeight = 0.22f;
@@ -17,7 +15,6 @@ public class Render3D : MonoBehaviour
     private bool cam1Left = false;
 
     private float y = 0;
-    private float posY = 0;
 
     public bool Play
     {
@@ -73,7 +70,6 @@ public class Render3D : MonoBehaviour
         }
         screen1.localPosition = new Vector3(screen1.localPosition.x, scroll.localPosition.y / 576 - 0.11f + (1.77778f - actualAspect) * 0.11f, screen1.localPosition.z);
         screen2.localPosition = new Vector3(screen2.localPosition.x, scroll.localPosition.y / 576 - 0.11f + (1.77778f - actualAspect) * 0.11f, screen2.localPosition.z);
-        wh = 1.77778f - actualAspect;
         if (camera1 != null)
             camera1.rect = (new Rect(screen1.localPosition.x / 1.13f + 0.04f, y + 0.59f, 0.92f, viewHeight));
         if (camera2 != null)

@@ -2736,26 +2736,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textAsset: {fileID: 4900000, guid: fbacae7b413950f4090537b4b037f872, type: 3}
-  allBox0:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  allBox1:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
   linesTemp:
   - 
   - 
@@ -3910,7 +3890,6 @@ MonoBehaviour:
   scroll: {fileID: 400058}
   textController: {fileID: 0}
   speed: 2
-  wh: 1
   camera1: {fileID: 0}
   camera2: {fileID: 0}
 --- !u!114 &11400150

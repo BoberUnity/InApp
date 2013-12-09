@@ -11,12 +11,11 @@ public class Text : MonoBehaviour
     //[SerializeField] private UILabel labelB = null;
     //[SerializeField] private UILabel labelC = null;
     //[SerializeField] private UILabel labelD = null;
-    [SerializeField]
-    private string[] allBox0;
-    [SerializeField]
-    private string[] allBox1;
-    [SerializeField]
-    private string[] linesTemp;
+    //[SerializeField]
+    //private string[] allBox0;
+    //[SerializeField]
+    //private string[] allBox1;
+    [SerializeField] private string[] linesTemp;
     public string[][] allBox;
     
     //private int numQuestion = 0;
@@ -138,8 +137,8 @@ public class Text : MonoBehaviour
           stlb = 0;
       }
 
-      allBox0 = allBox[0];
-      allBox1 = allBox[2];
+      //allBox0 = allBox[0];
+      //allBox1 = allBox[2];
   }
 
     //private IEnumerator LoadNextQuestion (float time)

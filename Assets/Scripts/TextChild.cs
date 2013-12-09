@@ -12,7 +12,7 @@ public class TextChild : MonoBehaviour
     [SerializeField] private UILabel labelD = null;
     [SerializeField] private Text t = null;//
     private int numQuestion = 0;
-    private int currQuestion = 0;//Ответ, который дал юзер
+    //private int currQuestion = 0;//Ответ, который дал юзер
     private GameObject instance = null;
     private GameObject instance2 = null;
     
@@ -143,7 +143,7 @@ public class TextChild : MonoBehaviour
     private IEnumerator LoadNextQuestion (float time)
     {
         yield return new WaitForSeconds(time);
-        Debug.LogWarning("LoadNextQuestion");
+        //Debug.LogWarning("LoadNextQuestion");
         
         ButtonsActivate(true);
         NumQuestion++;
@@ -152,15 +152,19 @@ public class TextChild : MonoBehaviour
         if (Resources.Load<GameObject>("Prefs/" + t.allBox[NumQuestion][0].Substring(0, t.allBox[NumQuestion][0].Length - 1)) == null)
         {
              instance = Instantiate(Resources.Load<GameObject>("Prefs/1.1.")) as GameObject;
-             Debug.LogWarning("Resources = null in path Prefs/" + t.allBox[NumQuestion][0].Substring(0, t.allBox[NumQuestion][0].Length - 1));
+             Debug.LogWarning("Resources was not found path: Prefs/" + t.allBox[NumQuestion][0].Substring(0, t.allBox[NumQuestion][0].Length - 1));
         }
         else
         {
             instance = Instantiate(Resources.Load<GameObject>("Prefs/" + t.allBox[NumQuestion][0].Substring(0, t.allBox[NumQuestion][0].Length - 1))) as GameObject;
-            Debug.LogWarning("Resources in path Prefs/" + t.allBox[NumQuestion][0].Substring(0, t.allBox[NumQuestion][0].Length - 1) + " load sucessfull");
+            //Debug.LogWarning("Resources in path Prefs/" + t.allBox[NumQuestion][0].Substring(0, t.allBox[NumQuestion][0].Length - 1) + " load sucessfull");
         }
         
         LoadPref();
+        if (render3D.Cam1Left)
+            SetLayer(instance, 10);
+        else
+            SetLayer(instance, 9);
         render3D.Play = true;
 
     }
@@ -187,7 +191,7 @@ public class TextChild : MonoBehaviour
             if (labelD.transform.parent.GetComponent<TweenColor>() != null)
                 labelD.transform.parent.GetComponent<TweenColor>().to = Color.white;
             labelD.transform.parent.GetComponent<UIButton>().defaultColor = Color.white;
-            Debug.LogWarning("Color white");
+            //Debug.LogWarning("Color white");
         }
         
     }
@@ -233,15 +237,44 @@ public class TextChild : MonoBehaviour
         t = GameObject.Find("TextController(Clone)").GetComponent<Text>();
         NumQuestion = 1;
         //NumQuestion = 1;
-        Debug.LogWarning("Prefs/" + t.allBox[NumQuestion][0]);
-        Debug.LogWarning("L" + t.allBox[NumQuestion][0].Length);
+        //Debug.LogWarning("Prefs/" + t.allBox[NumQuestion][0]);
+        //Debug.LogWarning("L" + t.allBox[NumQuestion][0].Length);
         instance = Instantiate(Resources.Load<GameObject>("Prefs/" + t.allBox[NumQuestion][0].Substring(0, t.allBox[NumQuestion][0].Length - 1))) as GameObject;
+        SetLayer(instance, 9);
         Camera cam = instance.GetComponentInChildren<Camera>();
         if (cam != null)
         {
             //cam.rect = new Rect(0.04f, 0.59f, 0.92f, 0.22f);
             render3D.camera1 = cam;
             render3D.camera1.rect = new Rect(0.04f, 0.59f, 0.92f, 0.22f);
+        }
+    }
+
+    private void SetLayer(GameObject inst, int layer)
+    {
+        if (inst != null)
+        {
+            inst.layer = layer;
+            Transform[] ts = inst.GetComponentsInChildren<Transform>();
+            foreach (Transform to in ts)
+            {
+                to.gameObject.layer = layer;
+            }
+
+            Light[] ls = inst.GetComponentsInChildren<Light>();
+            foreach (Light l in ls)
+            {
+                l.cullingMask = 1 << layer;
+            }
+
+            Camera[] cams = inst.GetComponentsInChildren<Camera>();
+            foreach (Camera c in cams)
+            {
+                c.cullingMask = 1 << layer;
+                AudioListener al = c.GetComponent<AudioListener>();
+                if (al != null)
+                    Destroy(al);
+            }
         }
     }
 }
