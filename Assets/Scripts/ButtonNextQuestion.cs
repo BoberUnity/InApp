@@ -17,20 +17,14 @@ public class ButtonNextQuestion : MonoBehaviour
               GetComponent<UIButton>().defaultColor = rightColor;
           else
               GetComponent<UIButton>().defaultColor = errorColor;
-          //GetComponent<TweenColor>().from = Color.red;
-          //textController.NumQuestion++;
-          //TweenColor.Begin(gameObject, GetComponent<UIButton>().duration, errorColor);
-          //GetComponent<TweenColor>().enabled = true;
-          //GetComponent<TweenColor>().from = Color.white;
-          //GetComponent<TweenColor>().to = Color.red;
-          //StartCoroutine(DisableButtons(GetComponent<UIButton>().duration));
+
           textController.ButtonsActivate(false);
       }
   }
 
-  private IEnumerator DisableButtons(float time)
-  {
-      yield return new WaitForSeconds(time);
-      textController.ButtonsActivate(false);
-  }
+  //private IEnumerator DisableButtons(float time)
+  //{
+  //    yield return new WaitForSeconds(time);
+  //    textController.ButtonsActivate(false);
+  //}
 }

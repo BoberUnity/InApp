@@ -3889,6 +3889,7 @@ MonoBehaviour:
   screen2: {fileID: 400048}
   scroll: {fileID: 400058}
   textController: {fileID: 0}
+  load: {fileID: 0}
   speed: 2
   camera1: {fileID: 0}
   camera2: {fileID: 0}

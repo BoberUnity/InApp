@@ -6,6 +6,8 @@ public class Render3D : MonoBehaviour
     [SerializeField] private Transform screen2 = null;
     [SerializeField] private Transform scroll = null;
     [SerializeField] private TextChild textController = null;
+    [SerializeField]
+    private GameObject load = null;
     [SerializeField] private float speed = 1;
     private bool play = false;
     private float actualAspect = 0.75f;
@@ -17,7 +19,7 @@ public class Render3D : MonoBehaviour
 
     public bool Play
     {
-        set { play = value;}
+        set { play = value; }
     }
 
     public bool Cam1Left
@@ -39,6 +41,7 @@ public class Render3D : MonoBehaviour
         
         if (play)//Анимация
         {
+            load.SetActive(false);
             screen1.localPosition = new Vector3(screen1.localPosition.x - Time.deltaTime * speed, screen1.localPosition.y,
                                                 screen1.localPosition.z);
         

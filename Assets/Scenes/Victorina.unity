@@ -1451,6 +1451,74 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   springStrength: 8
+--- !u!1 &743838326
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 743838327}
+  - 114: {fileID: 743838328}
+  m_Layer: 11
+  m_Name: Label
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &743838327
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 743838326}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2108778961}
+--- !u!114 &743838328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 743838326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d0b5f3bbe925a408bd595c79d0bf63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mColor: {r: .944827557, g: 1, b: 0, a: 1}
+  mPivot: 4
+  mWidth: 231
+  mHeight: 52
+  mDepth: 2
+  autoResizeBoxCollider: 0
+  keepCrispWhenShrunk: 1
+  mTrueTypeFont: {fileID: 0}
+  mFont: {fileID: 11400000, guid: 038e0f2dcddd1ba4b960e882add9da8b, type: 2}
+  mText: LOAD
+  mFontSize: 52
+  mFontStyle: 0
+  mEncoding: 1
+  mMaxLineCount: 0
+  mGradientBottom: {r: .699999988, g: .699999988, b: .699999988, a: 1}
+  mEffectStyle: 2
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
+  mSymbols: 1
+  mEffectDistance: {x: 3, y: 3}
+  mOverflow: 0
+  mMaterial: {fileID: 0}
+  mApplyGradient: 1
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mSpacingX: 0
+  mSpacingY: 0
+  mShrinkToFit: 0
+  mMaxLineWidth: 0
+  mMaxLineHeight: 0
+  mLineWidth: 0
+  mMultiline: 1
 --- !u!1 &819928420
 GameObject:
   m_ObjectHideFlags: 0
@@ -2584,6 +2652,7 @@ MonoBehaviour:
   labelC: {fileID: 833898422}
   labelD: {fileID: 2008431438}
   t: {fileID: 0}
+  load: {fileID: 743838326}
 --- !u!4 &1438869207
 Transform:
   m_ObjectHideFlags: 0
@@ -2644,7 +2713,7 @@ MonoBehaviour:
   tweenTarget: {fileID: 1592425155}
   hover: {r: 1, g: 1, b: 1, a: 1}
   pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
-  duration: .699999988
+  duration: .200000003
   disabledColor: {r: .5, g: .5, b: .5, a: 1}
   onClick: []
 --- !u!114 &1592425158
@@ -3279,6 +3348,7 @@ MonoBehaviour:
   screen2: {fileID: 997130983}
   scroll: {fileID: 1196046849}
   textController: {fileID: 1438869206}
+  load: {fileID: 743838326}
   speed: 1
   camera1: {fileID: 0}
   camera2: {fileID: 0}
@@ -3475,6 +3545,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1960676292}
+  - {fileID: 743838327}
   m_Father: {fileID: 1939852654}
 --- !u!54 &2108778962
 Rigidbody:

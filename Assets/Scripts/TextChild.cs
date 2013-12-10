@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Globalization;
 using UnityEngine;
 
 public class TextChild : MonoBehaviour
@@ -11,8 +12,8 @@ public class TextChild : MonoBehaviour
     [SerializeField] private UILabel labelC = null;
     [SerializeField] private UILabel labelD = null;
     [SerializeField] private Text t = null;//
+    [SerializeField] private GameObject load = null;
     private int numQuestion = 0;
-    //private int currQuestion = 0;//Ответ, который дал юзер
     private GameObject instance = null;
     private GameObject instance2 = null;
     
@@ -26,6 +27,7 @@ public class TextChild : MonoBehaviour
                 {
                     instance.animation.Play();
                     StartCoroutine(LoadNextQuestion(instance.animation.clip.length));
+                    StartCoroutine(ShowLoad(instance.animation.clip.length-0.01f));
                 }
                 else
                 {
@@ -40,6 +42,8 @@ public class TextChild : MonoBehaviour
         }
         else
             Debug.LogWarning("Prefab was not found");
+        
+
         return id.ToString() == t.allBox[numQuestion][3];
     }
 
@@ -74,98 +78,47 @@ public class TextChild : MonoBehaviour
          }
     }
 
-    //private bool first = true;
-    //private int stlb = 0;
-
     private void Start()
     {
-        //t = GameObject.Find("TextController(Clone)").GetComponent<Text>();
-        //NumQuestion = 1;
-
         StartCoroutine(StartFirstQuestion(0.01f));
     }
 
-  //private void Start()
-  //{
-  //    int numStr = 0;//vo vsem doke
-  //    var allText = textAsset.text;//File.ReadAllLines(textAsset);
-
-  //    for (int i = 0; i < allText.Length; i++)
-  //    {
-  //        if (allText.Substring(i, 1) == "\n")
-  //            numStr++;//count all lines
-  //        else
-  //        {
-  //            linesTemp[numStr] += allText.Substring(i, 1);
-  //        }
-  //    }
-  //    Array.Resize(ref allBox, numStr);
-      
-  //    for (int i = 0; i < numStr; i++)
-  //    {
-  //        Array.Resize(ref allBox[i], 9);
-          
-  //        for (int sm = 0; sm < linesTemp[i].Length; sm++)
-  //        {
-  //            if (linesTemp[i].Substring(sm, 1) == "'")
-  //            {
-  //               first = !first;
-  //               if (first)
-  //               {
-  //                   stlb = Mathf.Min(7, stlb += 1);
-  //               }
-  //            }
-  //            else
-  //            {
-  //                allBox[i][stlb] += linesTemp[i].Substring(sm, 1);
-  //                if (allBox[i][stlb].Length == 1 && allBox[i][stlb] == ",")//Uberem razdelitel ","
-  //                {
-  //                    allBox[i][stlb] = "";
-  //                }
-  //                //correct 2,
-  //                if (allBox[i][stlb].Length == 2)
-  //                {
-  //                    if (allBox[i][stlb] == "1," || allBox[i][stlb] == "2," || allBox[i][stlb] == "3," || allBox[i][stlb] == "4,")
-  //                    {
-  //                        allBox[i][stlb] = allBox[i][stlb].Substring(0, 1);
-  //                        stlb += 1;
-  //                    }
-  //                }
-  //            }
-  //        }
-  //        stlb = 0;
-  //    }
-
-  //    allBox0 = allBox[0];
-  //    allBox1 = allBox[2];
-  //}
-
-    private IEnumerator LoadNextQuestion (float time)
+  
+    private IEnumerator LoadNextQuestion (float time)//По завершении анимации
     {
         yield return new WaitForSeconds(time);
         //Debug.LogWarning("LoadNextQuestion");
         
-        NumQuestion++;
+        NumQuestion++;//text
+        PreloadScene();
+        render3D.Play = true;
+    }
 
+    private IEnumerator ShowLoad(float time)//По завершении анимации
+    {
+        yield return new WaitForSeconds(time);
+        load.SetActive(true);
+    }
+
+    private void PreloadScene()
+    {
         instance2 = instance;
         if (Resources.Load<GameObject>("Prefs/" + t.allBox[NumQuestion][0].Substring(0, t.allBox[NumQuestion][0].Length - 1)) == null)
         {
-             instance = Instantiate(Resources.Load<GameObject>("Prefs/1.1.")) as GameObject;
-             Debug.LogWarning("Resources was not found path: Prefs/" + t.allBox[NumQuestion][0].Substring(0, t.allBox[NumQuestion][0].Length - 1));
+            instance = Instantiate(Resources.Load<GameObject>("Prefs/1.1.")) as GameObject;
+            Debug.LogWarning("Resources was not found path: Prefs/" + t.allBox[NumQuestion][0].Substring(0, t.allBox[NumQuestion][0].Length - 1));
         }
         else
         {
             instance = Instantiate(Resources.Load<GameObject>("Prefs/" + t.allBox[NumQuestion][0].Substring(0, t.allBox[NumQuestion][0].Length - 1))) as GameObject;
             //Debug.LogWarning("Resources in path Prefs/" + t.allBox[NumQuestion][0].Substring(0, t.allBox[NumQuestion][0].Length - 1) + " load sucessfull");
         }
-        
+
         SetCamera();
         if (render3D.Cam1Left)
             SetLayer(instance, 10);
         else
             SetLayer(instance, 9);
-        render3D.Play = true;
-
     }
 
     public void ButtonsActivate(bool value)
@@ -200,6 +153,7 @@ public class TextChild : MonoBehaviour
     {
         Destroy(instance2);
         Resources.UnloadUnusedAssets();
+        
     }
 
     private void SetCamera()
