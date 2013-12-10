@@ -1461,7 +1461,7 @@ GameObject:
   - 4: {fileID: 743838327}
   - 114: {fileID: 743838328}
   m_Layer: 11
-  m_Name: Label
+  m_Name: LabelLoad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

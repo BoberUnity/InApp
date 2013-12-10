@@ -57,6 +57,7 @@ public class Render3D : MonoBehaviour
                 play = false;
                 textController.ButtonsActivate(true);
                 textController.UnloadPref();
+                textController.NumQuestion++;
                 camera1.rect = (new Rect(1.04f, y + 0.59f, 0.92f, viewHeight));
                 camera2.rect = (new Rect(0.04f, y + 0.59f, 0.92f, viewHeight));
             }
@@ -68,6 +69,7 @@ public class Render3D : MonoBehaviour
                 textController.UnloadPref();
                 play = false;
                 textController.ButtonsActivate(true);
+                textController.NumQuestion++;
                 camera2.rect = (new Rect(1.04f, y + 0.59f, 0.92f, viewHeight));
                 camera1.rect = (new Rect(0.04f, y + 0.59f, 0.92f, viewHeight));
             }
