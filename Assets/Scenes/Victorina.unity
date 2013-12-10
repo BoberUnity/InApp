@@ -214,7 +214,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 42}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.4231627, y: .712374568, z: 0}
+  m_LocalPosition: {x: -.951729894, y: .950668871, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 81}
@@ -227,7 +227,7 @@ Transform:
   m_GameObject: {fileID: 44}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .00234741787, y: .00234741787, z: .00234741787}
+  m_LocalScale: {x: .00175901491, y: .00175901491, z: .00175901491}
   m_Children:
   - {fileID: 79}
   - {fileID: 78}
@@ -283,7 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scalingStyle: 1
-  manualHeight: 852
+  manualHeight: 1137
   minimumHeight: 320
   maximumHeight: 2048
   head: 0
@@ -386,17 +386,17 @@ MonoBehaviour:
   cullWhileDragging: 0
   alwaysOnScreen: 0
   worldToLocal:
-    e00: 426
+    e00: 568.5
     e01: 0
     e02: 0
     e03: 0
     e10: 0
-    e11: 426
+    e11: 568.5
     e12: 0
     e13: 0
     e20: 0
     e21: 0
-    e22: 426
+    e22: 568.5
     e23: 0
     e30: 0
     e31: 0
@@ -2164,17 +2164,17 @@ MonoBehaviour:
   cullWhileDragging: 0
   alwaysOnScreen: 0
   worldToLocal:
-    e00: 426
+    e00: 568.5
     e01: 0
     e02: 0
     e03: -5
     e10: 0
-    e11: 426
+    e11: 568.5
     e12: 0
     e13: -65
     e20: 0
     e21: 0
-    e22: 426
+    e22: 568.5
     e23: 0
     e30: 0
     e31: 0
@@ -2440,7 +2440,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1352142159}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.4231627, y: 426.712372, z: 0}
+  m_LocalPosition: {x: -.951729894, y: 569.450684, z: 0}
   m_LocalScale: {x: 1, y: 1, z: .9999125}
   m_Children:
   - {fileID: 819928421}
@@ -3306,7 +3306,7 @@ Transform:
   m_GameObject: {fileID: 1939852653}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .0180180185, y: .0180180185, z: .0180180185}
+  m_LocalScale: {x: .0135135138, y: .0135135138, z: .0135135138}
   m_Children:
   - {fileID: 1688079267}
   - {fileID: 2108778961}
@@ -3324,7 +3324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scalingStyle: 1
-  manualHeight: 111
+  manualHeight: 148
   minimumHeight: 320
   maximumHeight: 2048
   head: 1
@@ -3351,7 +3351,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1960676291}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.37342274, y: -54.8148155, z: 0}
+  m_LocalPosition: {x: -.917658925, y: -73.0864182, z: 0}
   m_LocalScale: {x: 1.00002503, y: 1.00002503, z: 1.00002503}
   m_Children:
   - {fileID: 308703969}
@@ -3510,17 +3510,17 @@ MonoBehaviour:
   cullWhileDragging: 0
   alwaysOnScreen: 0
   worldToLocal:
-    e00: 55.5
+    e00: 74
     e01: 0
     e02: 0
     e03: 0
     e10: 0
-    e11: 55.5
+    e11: 74
     e12: 0
     e13: 0
     e20: 0
     e21: 0
-    e22: 55.5
+    e22: 74
     e23: 0
     e30: 0
     e31: 0

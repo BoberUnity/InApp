@@ -52,6 +52,7 @@ public class Render3D : MonoBehaviour
                 screen1.localPosition = new Vector3(1.13f, screen1.localPosition.y, screen1.localPosition.z);
                 screen2.localPosition = new Vector3(0, screen1.localPosition.y, screen1.localPosition.z);
                 play = false;
+                textController.ButtonsActivate(true);
                 textController.UnloadPref();
                 camera1.rect = (new Rect(1.04f, y + 0.59f, 0.92f, viewHeight));
                 camera2.rect = (new Rect(0.04f, y + 0.59f, 0.92f, viewHeight));
@@ -63,6 +64,7 @@ public class Render3D : MonoBehaviour
                 screen1.localPosition = new Vector3(0, screen1.localPosition.y, screen1.localPosition.z);
                 textController.UnloadPref();
                 play = false;
+                textController.ButtonsActivate(true);
                 camera2.rect = (new Rect(1.04f, y + 0.59f, 0.92f, viewHeight));
                 camera1.rect = (new Rect(0.04f, y + 0.59f, 0.92f, viewHeight));
             }

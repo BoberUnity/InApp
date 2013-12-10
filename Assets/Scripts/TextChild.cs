@@ -145,7 +145,6 @@ public class TextChild : MonoBehaviour
         yield return new WaitForSeconds(time);
         //Debug.LogWarning("LoadNextQuestion");
         
-        ButtonsActivate(true);
         NumQuestion++;
 
         instance2 = instance;
@@ -171,10 +170,11 @@ public class TextChild : MonoBehaviour
 
     public void ButtonsActivate(bool value)
     {
-        labelA.transform.parent.gameObject.GetComponent<UIButton>().enabled = value;
-        labelB.transform.parent.gameObject.GetComponent<UIButton>().enabled = value;
-        labelC.transform.parent.gameObject.GetComponent<UIButton>().enabled = value;
-        labelD.transform.parent.gameObject.GetComponent<UIButton>().enabled = value;
+        labelA.transform.parent.gameObject.GetComponent<UIButton>().isEnabled = value;
+        labelB.transform.parent.gameObject.GetComponent<UIButton>().isEnabled = value;
+        labelC.transform.parent.gameObject.GetComponent<UIButton>().isEnabled = value;
+        labelD.transform.parent.gameObject.GetComponent<UIButton>().isEnabled = value;
+        Debug.Log("ButtonsActivate "+value);
         if (value)
         {
             //labelA.transform.parent.GetComponent<TweenColor>().from = Color.green;
