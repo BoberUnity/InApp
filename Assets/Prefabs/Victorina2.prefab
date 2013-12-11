@@ -1779,9 +1779,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textController: {fileID: 0}
-  id: 3
-  rightColor: {r: .501960814, g: 1, b: .501960814, a: 1}
-  errorColor: {r: 1, g: .501960814, b: .501960814, a: 1}
 --- !u!114 &11400026
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3638,9 +3635,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textController: {fileID: 0}
-  id: 4
-  rightColor: {r: .501960814, g: 1, b: .501960814, a: 1}
-  errorColor: {r: 1, g: .501960814, b: .501960814, a: 1}
 --- !u!114 &11400122
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3722,9 +3716,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textController: {fileID: 0}
-  id: 1
-  rightColor: {r: .501960814, g: 1, b: .501960814, a: 1}
-  errorColor: {r: 1, g: .501960814, b: .501960814, a: 1}
 --- !u!114 &11400132
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3830,9 +3821,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textController: {fileID: 0}
-  id: 2
-  rightColor: {r: .501960814, g: 1, b: .501960814, a: 1}
-  errorColor: {r: 1, g: .501960814, b: .501960814, a: 1}
 --- !u!114 &11400146
 MonoBehaviour:
   m_ObjectHideFlags: 1

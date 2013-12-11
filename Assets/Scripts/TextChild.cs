@@ -12,13 +12,15 @@ public class TextChild : MonoBehaviour
     [SerializeField] private UILabel labelB = null;
     [SerializeField] private UILabel labelC = null;
     [SerializeField] private UILabel labelD = null;
+    [SerializeField] private Color rightColor = Color.green;
+    [SerializeField] private Color errorColor = Color.red;
     [SerializeField] private Text t = null;//
     [SerializeField] private GameObject load = null;
     private int numQuestion = 0;
     private GameObject instance = null;
     private GameObject instance2 = null;
     
-    public bool CurrQuestion(int id)
+    public void CurrQuestion()//нажата кнопка ABCD
     {
         if (instance != null)
         {
@@ -45,7 +47,7 @@ public class TextChild : MonoBehaviour
             Debug.LogWarning("Prefab was not found");
         
 
-        return id.ToString() == t.allBox[numQuestion][3];
+        //return id.ToString() == t.allBox[numQuestion][3];
     }
 
     public int NumQuestion
@@ -131,14 +133,13 @@ public class TextChild : MonoBehaviour
 
     public void ButtonsActivate(bool value)
     {
-        labelA.transform.parent.gameObject.GetComponent<UIButton>().isEnabled = value;
-        labelB.transform.parent.gameObject.GetComponent<UIButton>().isEnabled = value;
-        labelC.transform.parent.gameObject.GetComponent<UIButton>().isEnabled = value;
-        labelD.transform.parent.gameObject.GetComponent<UIButton>().isEnabled = value;
-        Debug.Log("ButtonsActivate "+value);
         if (value)
         {
-            //labelA.transform.parent.GetComponent<TweenColor>().from = Color.green;
+            labelA.transform.parent.gameObject.GetComponent<UIButton>().isEnabled = true;
+            labelB.transform.parent.gameObject.GetComponent<UIButton>().isEnabled = true;
+            labelC.transform.parent.gameObject.GetComponent<UIButton>().isEnabled = true;
+            labelD.transform.parent.gameObject.GetComponent<UIButton>().isEnabled = true;
+            
             labelA.transform.parent.GetComponent<TweenColor>().to = Color.white;
             labelA.transform.parent.GetComponent<UIButton>().defaultColor = Color.white;
 
@@ -152,9 +153,35 @@ public class TextChild : MonoBehaviour
             if (labelD.transform.parent.GetComponent<TweenColor>() != null)
                 labelD.transform.parent.GetComponent<TweenColor>().to = Color.white;
             labelD.transform.parent.GetComponent<UIButton>().defaultColor = Color.white;
-            //Debug.LogWarning("Color white");
         }
-        
+        else
+        {
+            if (t.allBox[numQuestion][3] == "1")
+                labelA.transform.parent.gameObject.GetComponent<UIButton>().defaultColor = rightColor;
+            else
+                labelA.transform.parent.gameObject.GetComponent<UIButton>().defaultColor = errorColor;
+
+            if (t.allBox[numQuestion][3] == "2")
+                labelB.transform.parent.gameObject.GetComponent<UIButton>().defaultColor = rightColor;
+            else
+                labelB.transform.parent.gameObject.GetComponent<UIButton>().defaultColor = errorColor; 
+            
+            if (t.allBox[numQuestion][3] == "3")
+                labelC.transform.parent.gameObject.GetComponent<UIButton>().defaultColor = rightColor;
+            else
+                labelC.transform.parent.gameObject.GetComponent<UIButton>().defaultColor = errorColor;  
+            
+            if (t.allBox[numQuestion][3] == "4")
+                labelD.transform.parent.gameObject.GetComponent<UIButton>().defaultColor = rightColor;
+            else
+                labelD.transform.parent.gameObject.GetComponent<UIButton>().defaultColor = errorColor;
+            
+
+            labelA.transform.parent.gameObject.GetComponent<UIButton>().isEnabled = false;
+            labelB.transform.parent.gameObject.GetComponent<UIButton>().isEnabled = false;
+            labelC.transform.parent.gameObject.GetComponent<UIButton>().isEnabled = false;
+            labelD.transform.parent.gameObject.GetComponent<UIButton>().isEnabled = false;
+        }
     }
 
     public void UnloadPref()
@@ -198,19 +225,16 @@ public class TextChild : MonoBehaviour
         yield return new WaitForSeconds(time);
         t = GameObject.Find("TextController(Clone)").GetComponent<Text>();
         NumQuestion = 1;
-        //NumQuestion = 1;
-        //Debug.LogWarning("Prefs/" + t.allBox[NumQuestion][0]);
-        //Debug.LogWarning("L" + t.allBox[NumQuestion][0].Length);
+        labelQuetion.text = t.allBox[numQuestion][1];
         instance = Instantiate(Resources.Load<GameObject>("Prefs/" + t.allBox[NumQuestion][0].Substring(0, t.allBox[NumQuestion][0].Length - 1))) as GameObject;
         SetLayer(instance, 9);
         Camera cam = instance.GetComponentInChildren<Camera>();
         if (cam != null)
         {
-            //cam.rect = new Rect(0.04f, 0.59f, 0.92f, 0.22f);
             render3D.camera1 = cam;
             render3D.camera1.rect = new Rect(0.04f, 0.59f, 0.92f, 0.22f);
         }
-        labelQuetion.text = t.allBox[numQuestion][1];
+        
     }
 
     private void SetLayer(GameObject inst, int layer)

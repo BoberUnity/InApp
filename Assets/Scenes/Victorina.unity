@@ -626,9 +626,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textController: {fileID: 1438869206}
-  id: 3
-  rightColor: {r: .501960814, g: 1, b: .501960814, a: 1}
-  errorColor: {r: 1, g: .501960814, b: .501960814, a: 1}
 --- !u!1 &209798049
 GameObject:
   m_ObjectHideFlags: 0
@@ -2720,6 +2717,8 @@ MonoBehaviour:
   labelB: {fileID: 1090986110}
   labelC: {fileID: 833898422}
   labelD: {fileID: 2008431438}
+  rightColor: {r: .536764741, g: 1, b: .536764741, a: 1}
+  errorColor: {r: 1, g: .558823526, b: .558823526, a: 1}
   t: {fileID: 0}
   load: {fileID: 743838326}
 --- !u!4 &1438869207
@@ -2866,9 +2865,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textController: {fileID: 1438869206}
-  id: 4
-  rightColor: {r: .501960814, g: 1, b: .501960814, a: 1}
-  errorColor: {r: 1, g: .501960814, b: .501960814, a: 1}
 --- !u!1 &1618759570
 GameObject:
   m_ObjectHideFlags: 0
@@ -3002,9 +2998,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textController: {fileID: 1438869206}
-  id: 1
-  rightColor: {r: .501960814, g: 1, b: .501960814, a: 1}
-  errorColor: {r: 1, g: .501960814, b: .501960814, a: 1}
 --- !u!1 &1688079266
 GameObject:
   m_ObjectHideFlags: 0
@@ -3328,9 +3321,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textController: {fileID: 1438869206}
-  id: 2
-  rightColor: {r: .501960814, g: 1, b: .501960814, a: 1}
-  errorColor: {r: 1, g: .501960814, b: .501960814, a: 1}
 --- !u!1 &1852084678
 GameObject:
   m_ObjectHideFlags: 0
