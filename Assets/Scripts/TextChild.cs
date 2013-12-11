@@ -12,6 +12,7 @@ public class TextChild : MonoBehaviour
     [SerializeField] private UILabel labelB = null;
     [SerializeField] private UILabel labelC = null;
     [SerializeField] private UILabel labelD = null;
+    [SerializeField] private UILabel labelCounter = null;
     [SerializeField] private Color rightColor = Color.green;
     [SerializeField] private Color errorColor = Color.red;
     [SerializeField] private Text t = null;//
@@ -19,8 +20,8 @@ public class TextChild : MonoBehaviour
     private int numQuestion = 0;
     private GameObject instance = null;
     private GameObject instance2 = null;
-    
-    public void CurrQuestion()//нажата кнопка ABCD
+    private int rightAnswers = 0;
+    public void CurrQuestion(int id)//нажата кнопка ABCD
     {
         if (instance != null)
         {
@@ -45,9 +46,11 @@ public class TextChild : MonoBehaviour
         }
         else
             Debug.LogWarning("Prefab was not found");
-        
 
-        //return id.ToString() == t.allBox[numQuestion][3];
+
+        if (id.ToString() == t.allBox[numQuestion][3])
+            rightAnswers++;
+        labelCounter.text = rightAnswers.ToString(CultureInfo.InvariantCulture) + " /" + NumQuestion.ToString(CultureInfo.InvariantCulture);
     }
 
     public int NumQuestion
