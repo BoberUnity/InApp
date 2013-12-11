@@ -7,6 +7,7 @@ public class TextChild : MonoBehaviour
 {
     [SerializeField] private Render3D render3D = null;
     [SerializeField] private UILabel labelQuetion = null;
+    [SerializeField] private UILabel label2Quetion = null;
     [SerializeField] private UILabel labelA = null;
     [SerializeField] private UILabel labelB = null;
     [SerializeField] private UILabel labelC = null;
@@ -53,7 +54,7 @@ public class TextChild : MonoBehaviour
         set
         {
             numQuestion = value;
-            labelQuetion.text = t.allBox[numQuestion][1];
+            
             labelA.text = t.allBox[numQuestion][4];
             labelB.text = t.allBox[numQuestion][5];
 
@@ -92,7 +93,10 @@ public class TextChild : MonoBehaviour
         labelB.text = "";
         labelC.text = "";
         labelD.text = "";
-        labelQuetion.text = "";
+        if (render3D.Cam1Left)
+            labelQuetion.text = t.allBox[numQuestion+1][1];
+        else
+            label2Quetion.text = t.allBox[numQuestion+1][1];
         //NumQuestion++;//text
         PreloadScene();
         render3D.Play = true;
@@ -206,6 +210,7 @@ public class TextChild : MonoBehaviour
             render3D.camera1 = cam;
             render3D.camera1.rect = new Rect(0.04f, 0.59f, 0.92f, 0.22f);
         }
+        labelQuetion.text = t.allBox[numQuestion][1];
     }
 
     private void SetLayer(GameObject inst, int layer)
