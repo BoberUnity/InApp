@@ -20,14 +20,14 @@
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:NGUI/d:Scripts/d:UI/f:UIRoot.cs" caret="3507" fromTop="15" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:TextControllerCreator.cs" caret="314" fromTop="9" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:MessageWindow.cs" caret="3082" fromTop="17" />
-    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:Text.cs" caret="4587" fromTop="133" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:NGUI/d:Scripts/d:Interaction/f:UIButtonColor.cs" caret="0" fromTop="0" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:NGUI/d:Scripts/d:Interaction/f:UIButton.cs" caret="1849" fromTop="14" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonSelectScene.cs" caret="238" fromTop="13" />
-    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonNextQuestion.cs" caret="728" fromTop="20" />
-    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:Render3D.cs" caret="2660" fromTop="27" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:InterfaceScale.cs" caret="662" fromTop="17" />
-    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:TextChild.cs" caret="596" fromTop="15" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:Text.cs" caret="4587" fromTop="16" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonNextQuestion.cs" caret="712" fromTop="17" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:Render3D.cs" caret="2887" fromTop="23" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:TextChild.cs" caret="2765" fromTop="4" />
   </RecentFiles>
   <RecentEdits>
     <File id="6194F83C-6AF0-72DF-C0A5-DD669BBC1CDD/d:Assets/d:Plugins/d:StoreKit/f:StoreKitProduct.cs" caret="2014" fromTop="15" />
@@ -49,8 +49,8 @@
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:InterfaceScale.cs" caret="662" fromTop="17" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:Text.cs" caret="4709" fromTop="18" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonSelectScene.cs" caret="172" fromTop="8" />
-    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:Render3D.cs" caret="2660" fromTop="18" />
     <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:ButtonNextQuestion.cs" caret="890" fromTop="25" />
-    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:TextChild.cs" caret="562" fromTop="14" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:Render3D.cs" caret="2887" fromTop="23" />
+    <File id="2BF692D6-FDF2-4AC6-A0D6-CBD5E885B664/d:Assets/d:Scripts/f:TextChild.cs" caret="3102" fromTop="19" />
   </RecentEdits>
 </RecentFiles>

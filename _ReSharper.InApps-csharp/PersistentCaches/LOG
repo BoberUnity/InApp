@@ -1,5 +1,5 @@
-2013/12/10-22:23:49.527 f5c Recovering log #227
-2013/12/10-22:23:49.527 f5c Level-0 table #229: started
-2013/12/10-22:23:49.571 f5c Level-0 table #229: 5648 bytes OK
-2013/12/10-22:23:49.614 f5c Delete type=0 #227
-2013/12/10-22:23:49.614 f5c Delete type=3 #225
+2013/12/11-13:34:38.236 12a0 Recovering log #230
+2013/12/11-13:34:38.266 12a0 Level-0 table #232: started
+2013/12/11-13:34:38.316 12a0 Level-0 table #232: 11136 bytes OK
+2013/12/11-13:34:38.386 12a0 Delete type=0 #230
+2013/12/11-13:34:38.386 12a0 Delete type=3 #228

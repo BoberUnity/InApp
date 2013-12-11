@@ -3887,6 +3887,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   screen1: {fileID: 400052}
   screen2: {fileID: 400048}
+  sprite1: {fileID: 0}
+  sprite2: {fileID: 0}
   scroll: {fileID: 400058}
   textController: {fileID: 0}
   load: {fileID: 0}
