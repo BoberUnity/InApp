@@ -34,24 +34,24 @@ public class Render3D : MonoBehaviour
     {
         actualAspect = (float)Screen.height / (float)Screen.width;
         transform.localScale = new Vector3(16/(actualAspect *9), 16/(actualAspect *9), 1);
-        viewHeight = 0.22f*1.7777f/actualAspect;
+        viewHeight = 0.22f;// *1.7777f / actualAspect;
+        screen1.localScale = new Vector3(screen1.localScale.x, screen1.localScale.y, screen1.localScale.z * actualAspect / 1.7777f);
+        screen2.localScale = new Vector3(screen2.localScale.x, screen2.localScale.y, screen2.localScale.z * actualAspect / 1.7777f);
+        //screen1.localPosition = new Vector3(screen1.localPosition.x, screen1.localPosition.y, screen1.localPosition.z);
     }
     
     private void Update()
     {
-        y = (scroll.localPosition.y - 65) / (1150 / (1.7777f / actualAspect));//scroll.localPosition.y / (321 * actualAspect) + 0.28f;//Движение за скроллом
-
-        
+        y = (scroll.localPosition.y - 65) / (1150 / (1.7777f / actualAspect));
         
         if (play)//Анимация
         {
             load.SetActive(false);
-            screen1.localPosition = new Vector3(screen1.localPosition.x - Time.deltaTime * speed, screen1.localPosition.y,
+            screen1.localPosition = new Vector3(screen1.localPosition.x - Time.deltaTime * speed, screen1.localPosition.y ,
                                                 screen1.localPosition.z);
-        
-            screen2.localPosition = new Vector3(screen2.localPosition.x - Time.deltaTime * speed, screen2.localPosition.y,
-                                                screen2.localPosition.z);
 
+            screen2.localPosition = new Vector3(screen2.localPosition.x - Time.deltaTime * speed, screen2.localPosition.y ,
+                                                screen2.localPosition.z);
             
 
             if (screen1.localPosition.x < -1.13f)
@@ -78,8 +78,8 @@ public class Render3D : MonoBehaviour
                 camera1.rect = (new Rect(0.04f, y + 0.59f, 0.92f, viewHeight));
             }
         }
-        screen1.localPosition = new Vector3(screen1.localPosition.x, scroll.localPosition.y / 576 - 0.11f + (1.77778f - actualAspect) * 0.11f, screen1.localPosition.z);
-        screen2.localPosition = new Vector3(screen2.localPosition.x, scroll.localPosition.y / 576 - 0.11f + (1.77778f - actualAspect) * 0.11f, screen2.localPosition.z);
+        screen1.localPosition = new Vector3(screen1.localPosition.x, scroll.localPosition.y / 576 - 0.11f /*+ (1.77778f - actualAspect) * 0.11f*/, screen1.localPosition.z);
+        screen2.localPosition = new Vector3(screen2.localPosition.x, scroll.localPosition.y / 576 - 0.11f /*+ (1.77778f - actualAspect) * 0.11f*/, screen2.localPosition.z);
 
         sprite1.localPosition = new Vector3(screen1.localPosition.x * 620 / 1.13f, scroll.localPosition.y - 65,
                                                 sprite1.localPosition.z);
